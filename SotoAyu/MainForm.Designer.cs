@@ -32,7 +32,7 @@
             // 
             // MainForm
             // 
-            ClientSize = new Size(1255, 769);
+            ClientSize = new Size(1222, 777);
             Name = "MainForm";
             ResumeLayout(false);
 
