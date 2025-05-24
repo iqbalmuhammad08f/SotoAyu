@@ -8,5 +8,8 @@ namespace SotoAyu.model
 {
     internal class Karyawan
     {
+        public int id_karywan { get; set; }
+        public string username { get; set; }
+        public string password { get; set; }
     }
 }

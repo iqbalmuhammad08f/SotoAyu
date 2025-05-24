@@ -28,58 +28,32 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cuiButton1 = new CuoreUI.Controls.cuiButton();
+            label1 = new Label();
             SuspendLayout();
             // 
-            // cuiButton1
+            // label1
             // 
-            cuiButton1.CheckButton = false;
-            cuiButton1.Checked = false;
-            cuiButton1.CheckedBackground = Color.FromArgb(255, 106, 0);
-            cuiButton1.CheckedForeColor = Color.White;
-            cuiButton1.CheckedImageTint = Color.White;
-            cuiButton1.CheckedOutline = Color.FromArgb(255, 106, 0);
-            cuiButton1.Content = "Your text here!";
-            cuiButton1.DialogResult = DialogResult.None;
-            cuiButton1.Font = new Font("Microsoft Sans Serif", 9.75F);
-            cuiButton1.ForeColor = Color.Black;
-            cuiButton1.HoverBackground = Color.White;
-            cuiButton1.HoveredImageTint = Color.White;
-            cuiButton1.HoverForeColor = Color.Black;
-            cuiButton1.HoverOutline = Color.FromArgb(32, 128, 128, 128);
-            cuiButton1.Image = null;
-            cuiButton1.ImageAutoCenter = true;
-            cuiButton1.ImageExpand = new Point(0, 0);
-            cuiButton1.ImageOffset = new Point(0, 0);
-            cuiButton1.Location = new Point(480, 298);
-            cuiButton1.Name = "cuiButton1";
-            cuiButton1.NormalBackground = Color.White;
-            cuiButton1.NormalForeColor = Color.Black;
-            cuiButton1.NormalImageTint = Color.White;
-            cuiButton1.NormalOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButton1.OutlineThickness = 1F;
-            cuiButton1.PressedBackground = Color.WhiteSmoke;
-            cuiButton1.PressedForeColor = Color.FromArgb(32, 32, 32);
-            cuiButton1.PressedImageTint = Color.White;
-            cuiButton1.PressedOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButton1.Rounding = new Padding(8);
-            cuiButton1.Size = new Size(191, 56);
-            cuiButton1.TabIndex = 0;
-            cuiButton1.TextAlignment = StringAlignment.Center;
-            cuiButton1.TextOffset = new Point(0, 0);
+            label1.AutoSize = true;
+            label1.Location = new Point(718, 263);
+            label1.Name = "label1";
+            label1.Size = new Size(51, 20);
+            label1.TabIndex = 0;
+            label1.Text = "admin";
+            label1.Click += label1_Click;
             // 
             // UCDasboardAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(cuiButton1);
+            Controls.Add(label1);
             Name = "UCDasboardAdmin";
             Size = new Size(1240, 824);
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
 
-        private CuoreUI.Controls.cuiButton cuiButton1;
+        private Label label1;
     }
 }

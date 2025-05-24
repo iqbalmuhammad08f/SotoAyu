@@ -33,9 +33,10 @@ namespace SotoAyu
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             label1 = new Label();
             label2 = new Label();
-            cuiTextBox1 = new CuoreUI.Controls.cuiTextBox();
+            cuiTextBoxUsername = new CuoreUI.Controls.cuiTextBox();
             cuiButton1 = new CuoreUI.Controls.cuiButton();
-            cuiTextBox2 = new CuoreUI.Controls.cuiTextBox();
+            cuiTextBoxPassword = new CuoreUI.Controls.cuiTextBox();
+            cuiButtonHidePw = new CuoreUI.Controls.cuiButton();
             SuspendLayout();
             // 
             // label1
@@ -62,34 +63,35 @@ namespace SotoAyu
             label2.TabIndex = 1;
             label2.Text = "Password";
             // 
-            // cuiTextBox1
+            // cuiTextBoxUsername
             // 
-            cuiTextBox1.BackColor = Color.Transparent;
-            cuiTextBox1.BackgroundColor = SystemColors.ButtonHighlight;
-            cuiTextBox1.BorderColor = Color.FromArgb(128, 128, 128, 128);
-            cuiTextBox1.Content = "";
-            cuiTextBox1.FocusBackgroundColor = Color.White;
-            cuiTextBox1.FocusBorderColor = Color.Transparent;
-            cuiTextBox1.FocusImageTint = Color.White;
-            cuiTextBox1.Font = new Font("Alike", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiTextBox1.ForeColor = Color.Black;
-            cuiTextBox1.Image = null;
-            cuiTextBox1.ImageExpand = new Point(0, 0);
-            cuiTextBox1.ImageOffset = new Point(0, 0);
-            cuiTextBox1.Location = new Point(687, 332);
-            cuiTextBox1.Margin = new Padding(4);
-            cuiTextBox1.Multiline = false;
-            cuiTextBox1.Name = "cuiTextBox1";
-            cuiTextBox1.NormalImageTint = Color.White;
-            cuiTextBox1.Padding = new Padding(26, 14, 26, 0);
-            cuiTextBox1.PasswordChar = false;
-            cuiTextBox1.PlaceholderColor = SystemColors.InactiveCaption;
-            cuiTextBox1.PlaceholderText = "";
-            cuiTextBox1.Rounding = new Padding(30);
-            cuiTextBox1.Size = new Size(378, 55);
-            cuiTextBox1.TabIndex = 2;
-            cuiTextBox1.TextOffset = new Size(0, 0);
-            cuiTextBox1.UnderlinedStyle = true;
+            cuiTextBoxUsername.AutoValidate = AutoValidate.EnablePreventFocusChange;
+            cuiTextBoxUsername.BackColor = Color.Transparent;
+            cuiTextBoxUsername.BackgroundColor = SystemColors.ButtonHighlight;
+            cuiTextBoxUsername.BorderColor = Color.FromArgb(128, 128, 128, 128);
+            cuiTextBoxUsername.Content = "";
+            cuiTextBoxUsername.FocusBackgroundColor = Color.White;
+            cuiTextBoxUsername.FocusBorderColor = Color.Transparent;
+            cuiTextBoxUsername.FocusImageTint = Color.White;
+            cuiTextBoxUsername.Font = new Font("Alike", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiTextBoxUsername.ForeColor = Color.Black;
+            cuiTextBoxUsername.Image = null;
+            cuiTextBoxUsername.ImageExpand = new Point(0, 0);
+            cuiTextBoxUsername.ImageOffset = new Point(0, 0);
+            cuiTextBoxUsername.Location = new Point(687, 333);
+            cuiTextBoxUsername.Margin = new Padding(4);
+            cuiTextBoxUsername.Multiline = false;
+            cuiTextBoxUsername.Name = "cuiTextBoxUsername";
+            cuiTextBoxUsername.NormalImageTint = Color.White;
+            cuiTextBoxUsername.Padding = new Padding(26, 13, 26, 0);
+            cuiTextBoxUsername.PasswordChar = false;
+            cuiTextBoxUsername.PlaceholderColor = SystemColors.InactiveCaption;
+            cuiTextBoxUsername.PlaceholderText = "";
+            cuiTextBoxUsername.Rounding = new Padding(30);
+            cuiTextBoxUsername.Size = new Size(378, 52);
+            cuiTextBoxUsername.TabIndex = 2;
+            cuiTextBoxUsername.TextOffset = new Size(0, 0);
+            cuiTextBoxUsername.UnderlinedStyle = true;
             // 
             // cuiButton1
             // 
@@ -128,35 +130,77 @@ namespace SotoAyu
             cuiButton1.TabIndex = 4;
             cuiButton1.TextAlignment = StringAlignment.Center;
             cuiButton1.TextOffset = new Point(0, 0);
+            cuiButton1.Click += cuiButton1_Click;
             // 
-            // cuiTextBox2
+            // cuiTextBoxPassword
             // 
-            cuiTextBox2.BackColor = Color.Transparent;
-            cuiTextBox2.BackgroundColor = SystemColors.ButtonHighlight;
-            cuiTextBox2.BorderColor = Color.FromArgb(128, 128, 128, 128);
-            cuiTextBox2.Content = "";
-            cuiTextBox2.FocusBackgroundColor = Color.White;
-            cuiTextBox2.FocusBorderColor = Color.Transparent;
-            cuiTextBox2.FocusImageTint = Color.White;
-            cuiTextBox2.Font = new Font("Alike", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiTextBox2.ForeColor = Color.Black;
-            cuiTextBox2.Image = null;
-            cuiTextBox2.ImageExpand = new Point(0, 0);
-            cuiTextBox2.ImageOffset = new Point(0, 0);
-            cuiTextBox2.Location = new Point(687, 439);
-            cuiTextBox2.Margin = new Padding(4);
-            cuiTextBox2.Multiline = false;
-            cuiTextBox2.Name = "cuiTextBox2";
-            cuiTextBox2.NormalImageTint = Color.White;
-            cuiTextBox2.Padding = new Padding(26, 14, 26, 0);
-            cuiTextBox2.PasswordChar = false;
-            cuiTextBox2.PlaceholderColor = SystemColors.WindowText;
-            cuiTextBox2.PlaceholderText = "";
-            cuiTextBox2.Rounding = new Padding(30);
-            cuiTextBox2.Size = new Size(378, 55);
-            cuiTextBox2.TabIndex = 5;
-            cuiTextBox2.TextOffset = new Size(0, 0);
-            cuiTextBox2.UnderlinedStyle = true;
+            cuiTextBoxPassword.BackColor = Color.Transparent;
+            cuiTextBoxPassword.BackgroundColor = SystemColors.ButtonHighlight;
+            cuiTextBoxPassword.BorderColor = Color.Transparent;
+            cuiTextBoxPassword.Content = "";
+            cuiTextBoxPassword.FocusBackgroundColor = Color.White;
+            cuiTextBoxPassword.FocusBorderColor = Color.Transparent;
+            cuiTextBoxPassword.FocusImageTint = Color.White;
+            cuiTextBoxPassword.Font = new Font("Alike", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiTextBoxPassword.ForeColor = Color.Black;
+            cuiTextBoxPassword.Image = null;
+            cuiTextBoxPassword.ImageExpand = new Point(0, 0);
+            cuiTextBoxPassword.ImageOffset = new Point(0, 0);
+            cuiTextBoxPassword.Location = new Point(687, 441);
+            cuiTextBoxPassword.Margin = new Padding(4);
+            cuiTextBoxPassword.Multiline = false;
+            cuiTextBoxPassword.Name = "cuiTextBoxPassword";
+            cuiTextBoxPassword.NormalImageTint = Color.White;
+            cuiTextBoxPassword.Padding = new Padding(26, 13, 26, 0);
+            cuiTextBoxPassword.PasswordChar = true;
+            cuiTextBoxPassword.PlaceholderColor = SystemColors.WindowText;
+            cuiTextBoxPassword.PlaceholderText = "";
+            cuiTextBoxPassword.Rounding = new Padding(30);
+            cuiTextBoxPassword.Size = new Size(326, 52);
+            cuiTextBoxPassword.TabIndex = 5;
+            cuiTextBoxPassword.TextOffset = new Size(0, 0);
+            cuiTextBoxPassword.UnderlinedStyle = true;
+            // 
+            // cuiButtonHidePw
+            // 
+            cuiButtonHidePw.BackColor = Color.Transparent;
+            cuiButtonHidePw.BackgroundImage = Properties.Resources.Hide;
+            cuiButtonHidePw.BackgroundImageLayout = ImageLayout.Zoom;
+            cuiButtonHidePw.CheckButton = false;
+            cuiButtonHidePw.Checked = false;
+            cuiButtonHidePw.CheckedBackground = Color.FromArgb(255, 106, 0);
+            cuiButtonHidePw.CheckedForeColor = Color.White;
+            cuiButtonHidePw.CheckedImageTint = Color.White;
+            cuiButtonHidePw.CheckedOutline = Color.FromArgb(255, 106, 0);
+            cuiButtonHidePw.Content = "";
+            cuiButtonHidePw.DialogResult = DialogResult.None;
+            cuiButtonHidePw.Font = new Font("Microsoft Sans Serif", 9.75F);
+            cuiButtonHidePw.ForeColor = Color.Transparent;
+            cuiButtonHidePw.HoverBackground = Color.Transparent;
+            cuiButtonHidePw.HoveredImageTint = Color.Transparent;
+            cuiButtonHidePw.HoverForeColor = Color.Black;
+            cuiButtonHidePw.HoverOutline = Color.Transparent;
+            cuiButtonHidePw.Image = Properties.Resources.Hide;
+            cuiButtonHidePw.ImageAutoCenter = true;
+            cuiButtonHidePw.ImageExpand = new Point(5, 5);
+            cuiButtonHidePw.ImageOffset = new Point(0, 0);
+            cuiButtonHidePw.Location = new Point(1011, 455);
+            cuiButtonHidePw.Name = "cuiButtonHidePw";
+            cuiButtonHidePw.NormalBackground = Color.Transparent;
+            cuiButtonHidePw.NormalForeColor = Color.Transparent;
+            cuiButtonHidePw.NormalImageTint = Color.White;
+            cuiButtonHidePw.NormalOutline = Color.Transparent;
+            cuiButtonHidePw.OutlineThickness = 1F;
+            cuiButtonHidePw.PressedBackground = Color.WhiteSmoke;
+            cuiButtonHidePw.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuiButtonHidePw.PressedImageTint = Color.White;
+            cuiButtonHidePw.PressedOutline = Color.DimGray;
+            cuiButtonHidePw.Rounding = new Padding(8);
+            cuiButtonHidePw.Size = new Size(43, 27);
+            cuiButtonHidePw.TabIndex = 6;
+            cuiButtonHidePw.TextAlignment = StringAlignment.Center;
+            cuiButtonHidePw.TextOffset = new Point(0, 0);
+            cuiButtonHidePw.Click += cuiButtonHidePw_Click;
             // 
             // LoginForm
             // 
@@ -165,9 +209,10 @@ namespace SotoAyu
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(1222, 777);
-            Controls.Add(cuiTextBox2);
+            Controls.Add(cuiButtonHidePw);
+            Controls.Add(cuiTextBoxPassword);
             Controls.Add(cuiButton1);
-            Controls.Add(cuiTextBox1);
+            Controls.Add(cuiTextBoxUsername);
             Controls.Add(label2);
             Controls.Add(label1);
             DoubleBuffered = true;
@@ -181,8 +226,9 @@ namespace SotoAyu
 
         private Label label1;
         private Label label2;
-        private CuoreUI.Controls.cuiTextBox cuiTextBox1;
+        private CuoreUI.Controls.cuiTextBox cuiTextBoxUsername;
         private CuoreUI.Controls.cuiButton cuiButton1;
-        private CuoreUI.Controls.cuiTextBox cuiTextBox2;
+        private CuoreUI.Controls.cuiTextBox cuiTextBoxPassword;
+        private CuoreUI.Controls.cuiButton cuiButtonHidePw;
     }
 }
