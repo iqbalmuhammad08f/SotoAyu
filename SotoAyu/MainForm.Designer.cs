@@ -28,16 +28,28 @@
         /// </summary>
         private void InitializeComponent()
         {
+            panelContainer = new Panel();
             SuspendLayout();
+            // 
+            // panelContainer
+            // 
+            panelContainer.Dock = DockStyle.Fill;
+            panelContainer.Location = new Point(0, 0);
+            panelContainer.Name = "panelContainer";
+            panelContainer.Size = new Size(1222, 777);
+            panelContainer.TabIndex = 0;
             // 
             // MainForm
             // 
             ClientSize = new Size(1222, 777);
+            Controls.Add(panelContainer);
             Name = "MainForm";
             ResumeLayout(false);
 
         }
 
         #endregion
+
+        private Panel panelContainer;
     }
 }

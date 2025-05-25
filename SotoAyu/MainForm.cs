@@ -5,27 +5,19 @@ namespace SotoAyu
 {
     public partial class MainForm : Form
     {
-        public MainForm(string login)
+        public MainForm()
         {
             InitializeComponent();
-            if(login == "admin")
-            {
-                LoadControl(new UCDasboardAdmin());
-            }
-            else
-            {
-                LoadControl(new UCDasboardKasir());
-            }
+            LoadControl(new UCLogin(this));
+            
         }
 
-        private void LoadControl(UserControl uc)
+        public void LoadControl(UserControl uc)
         {
-            this.Controls.Clear();
+            panelContainer.Controls.Clear();
             uc.Dock = DockStyle.Fill;
-            this.Controls.Add(uc);
+            panelContainer.Controls.Add(uc);
         }
-
-
 
     }
 }

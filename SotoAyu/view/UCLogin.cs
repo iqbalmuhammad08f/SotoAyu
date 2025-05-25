@@ -9,30 +9,34 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using SotoAyu.controller;
 
-namespace SotoAyu
+namespace SotoAyu.view
 {
-    public partial class LoginForm : Form
+    public partial class UCLogin : UserControl
     {
-        public LoginForm()
+        private MainForm MainForm;
+        public UCLogin(MainForm mainForm)
         {
             InitializeComponent();
+            this.MainForm = mainForm;
         }
 
-        private void cuiButton1_Click(object sender, EventArgs e)
+        private void buttonHidePw_Click(object sender, EventArgs e)
+        {
+            this.cuiTextBoxPassword.PasswordChar = (cuiTextBoxPassword.PasswordChar) ? false : true;
+        }
+
+        private void cuiButtonLogin_Click(object sender, EventArgs e)
         {
             var result = AuthController.login(cuiTextBoxUsername.Content, cuiTextBoxPassword.Content);
-
             if (result != null)
             {
                 if (result == "admin")
                 {
-                    var form = new MainForm("admin"); 
-                    form.Show();
+                    MainForm.LoadControl(new UCDasboardAdmin());
                 }
                 else if (result == "kasir")
                 {
-                    var form = new MainForm("kasir");
-                    form.Show();
+                    MainForm.LoadControl(new UCDasboardKasir());
                 }
                 this.Hide();
             }
@@ -40,12 +44,6 @@ namespace SotoAyu
             {
                 MessageBox.Show("Username atau password salah.");
             }
-
-        }
-
-        private void cuiButtonHidePw_Click(object sender, EventArgs e)
-        {
-            this.cuiTextBoxPassword.PasswordChar = (cuiTextBoxPassword.PasswordChar) ? false : true;
         }
     }
 }
