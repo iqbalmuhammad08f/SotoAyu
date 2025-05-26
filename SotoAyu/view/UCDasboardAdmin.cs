@@ -13,9 +13,11 @@ namespace SotoAyu.view
 {
     public partial class UCDasboardAdmin : UserControl
     {
-        public UCDasboardAdmin()
+        MainForm MainForm;
+        public UCDasboardAdmin(MainForm form)
         {
             InitializeComponent();
+            MainForm = form;
         }
         private void highlightButton(cuiButton activeButton)
         {
@@ -40,13 +42,13 @@ namespace SotoAyu.view
         private void cuiButtonKasir_Click(object sender, EventArgs e)
         {
             highlightButton((cuiButton)sender);
+            LoadMenu(new UCManajemenAkunKasir());
 
         }
 
         private void cuiButtonKaryawan_Click(object sender, EventArgs e)
         {
             highlightButton((cuiButton)sender);
-
         }
 
         private void cuiButtonMenu_Click(object sender, EventArgs e)
@@ -61,9 +63,16 @@ namespace SotoAyu.view
 
         }
 
-        private void cuiButton1_Click(object sender, EventArgs e)
+        private void cuiButtonLogout_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("hallo");
+            ExitForm exitForm = new ExitForm(MainForm);
+            exitForm.ShowDialog();
+        }
+        public void LoadMenu(UserControl uc)
+        {
+            panelDasboardContainer.Controls.Clear();
+            uc.Dock = DockStyle.Fill;
+            panelDasboardContainer.Controls.Add(uc);
         }
     }
 }

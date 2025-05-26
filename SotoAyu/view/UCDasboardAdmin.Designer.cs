@@ -36,7 +36,7 @@
             cuiButtonMenu = new CuoreUI.Controls.cuiButton();
             cuiButtonTransaksi = new CuoreUI.Controls.cuiButton();
             panelDasboardContainer = new Panel();
-            cuiButton1 = new CuoreUI.Controls.cuiButton();
+            cuiButtonLogout = new CuoreUI.Controls.cuiButton();
             SuspendLayout();
             // 
             // cuiLabel1
@@ -81,7 +81,7 @@
             cuiButtonLaporan.NormalImageTint = Color.White;
             cuiButtonLaporan.NormalOutline = Color.Transparent;
             cuiButtonLaporan.OutlineThickness = 1F;
-            cuiButtonLaporan.PressedBackground = Color.WhiteSmoke;
+            cuiButtonLaporan.PressedBackground = Color.Transparent;
             cuiButtonLaporan.PressedForeColor = Color.FromArgb(32, 32, 32);
             cuiButtonLaporan.PressedImageTint = Color.White;
             cuiButtonLaporan.PressedOutline = Color.FromArgb(64, 128, 128, 128);
@@ -120,7 +120,7 @@
             cuiButtonKasir.NormalImageTint = Color.White;
             cuiButtonKasir.NormalOutline = Color.Transparent;
             cuiButtonKasir.OutlineThickness = 1F;
-            cuiButtonKasir.PressedBackground = Color.WhiteSmoke;
+            cuiButtonKasir.PressedBackground = Color.Transparent;
             cuiButtonKasir.PressedForeColor = Color.FromArgb(32, 32, 32);
             cuiButtonKasir.PressedImageTint = Color.White;
             cuiButtonKasir.PressedOutline = Color.FromArgb(64, 128, 128, 128);
@@ -159,7 +159,7 @@
             cuiButtonKaryawan.NormalImageTint = Color.White;
             cuiButtonKaryawan.NormalOutline = Color.Transparent;
             cuiButtonKaryawan.OutlineThickness = 1F;
-            cuiButtonKaryawan.PressedBackground = Color.WhiteSmoke;
+            cuiButtonKaryawan.PressedBackground = Color.Transparent;
             cuiButtonKaryawan.PressedForeColor = Color.FromArgb(32, 32, 32);
             cuiButtonKaryawan.PressedImageTint = Color.White;
             cuiButtonKaryawan.PressedOutline = Color.FromArgb(64, 128, 128, 128);
@@ -198,7 +198,7 @@
             cuiButtonMenu.NormalImageTint = Color.White;
             cuiButtonMenu.NormalOutline = Color.Transparent;
             cuiButtonMenu.OutlineThickness = 1F;
-            cuiButtonMenu.PressedBackground = Color.WhiteSmoke;
+            cuiButtonMenu.PressedBackground = Color.Transparent;
             cuiButtonMenu.PressedForeColor = Color.FromArgb(32, 32, 32);
             cuiButtonMenu.PressedImageTint = Color.White;
             cuiButtonMenu.PressedOutline = Color.FromArgb(64, 128, 128, 128);
@@ -237,7 +237,7 @@
             cuiButtonTransaksi.NormalImageTint = Color.White;
             cuiButtonTransaksi.NormalOutline = Color.Transparent;
             cuiButtonTransaksi.OutlineThickness = 1F;
-            cuiButtonTransaksi.PressedBackground = Color.WhiteSmoke;
+            cuiButtonTransaksi.PressedBackground = Color.Transparent;
             cuiButtonTransaksi.PressedForeColor = Color.FromArgb(32, 32, 32);
             cuiButtonTransaksi.PressedImageTint = Color.White;
             cuiButtonTransaksi.PressedOutline = Color.FromArgb(64, 128, 128, 128);
@@ -257,44 +257,44 @@
             panelDasboardContainer.Size = new Size(910, 777);
             panelDasboardContainer.TabIndex = 6;
             // 
-            // cuiButton1
+            // cuiButtonLogout
             // 
-            cuiButton1.BackColor = Color.Transparent;
-            cuiButton1.CheckButton = false;
-            cuiButton1.Checked = false;
-            cuiButton1.CheckedBackground = Color.FromArgb(255, 106, 0);
-            cuiButton1.CheckedForeColor = Color.White;
-            cuiButton1.CheckedImageTint = Color.White;
-            cuiButton1.CheckedOutline = Color.FromArgb(255, 106, 0);
-            cuiButton1.Content = "Log Out";
-            cuiButton1.DialogResult = DialogResult.OK;
-            cuiButton1.Font = new Font("Alike", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiButton1.ForeColor = Color.FromArgb(224, 242, 226);
-            cuiButton1.HoverBackground = Color.Transparent;
-            cuiButton1.HoveredImageTint = Color.White;
-            cuiButton1.HoverForeColor = Color.FromArgb(224, 242, 226);
-            cuiButton1.HoverOutline = Color.Transparent;
-            cuiButton1.Image = Properties.Resources.Logout;
-            cuiButton1.ImageAutoCenter = true;
-            cuiButton1.ImageExpand = new Point(0, 0);
-            cuiButton1.ImageOffset = new Point(0, 0);
-            cuiButton1.Location = new Point(19, 712);
-            cuiButton1.Name = "cuiButton1";
-            cuiButton1.NormalBackground = Color.Transparent;
-            cuiButton1.NormalForeColor = Color.FromArgb(224, 242, 226);
-            cuiButton1.NormalImageTint = Color.White;
-            cuiButton1.NormalOutline = Color.Transparent;
-            cuiButton1.OutlineThickness = 1F;
-            cuiButton1.PressedBackground = Color.Transparent;
-            cuiButton1.PressedForeColor = Color.FromArgb(32, 32, 32);
-            cuiButton1.PressedImageTint = Color.White;
-            cuiButton1.PressedOutline = Color.Transparent;
-            cuiButton1.Rounding = new Padding(8);
-            cuiButton1.Size = new Size(261, 62);
-            cuiButton1.TabIndex = 0;
-            cuiButton1.TextAlignment = StringAlignment.Center;
-            cuiButton1.TextOffset = new Point(0, 0);
-            cuiButton1.Click += cuiButton1_Click;
+            cuiButtonLogout.BackColor = Color.Transparent;
+            cuiButtonLogout.CheckButton = false;
+            cuiButtonLogout.Checked = false;
+            cuiButtonLogout.CheckedBackground = Color.FromArgb(255, 106, 0);
+            cuiButtonLogout.CheckedForeColor = Color.White;
+            cuiButtonLogout.CheckedImageTint = Color.White;
+            cuiButtonLogout.CheckedOutline = Color.FromArgb(255, 106, 0);
+            cuiButtonLogout.Content = "Log Out";
+            cuiButtonLogout.DialogResult = DialogResult.OK;
+            cuiButtonLogout.Font = new Font("Alike", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiButtonLogout.ForeColor = Color.FromArgb(224, 242, 226);
+            cuiButtonLogout.HoverBackground = Color.Transparent;
+            cuiButtonLogout.HoveredImageTint = Color.White;
+            cuiButtonLogout.HoverForeColor = Color.FromArgb(224, 242, 226);
+            cuiButtonLogout.HoverOutline = Color.Transparent;
+            cuiButtonLogout.Image = Properties.Resources.Logout;
+            cuiButtonLogout.ImageAutoCenter = true;
+            cuiButtonLogout.ImageExpand = new Point(0, 0);
+            cuiButtonLogout.ImageOffset = new Point(0, 0);
+            cuiButtonLogout.Location = new Point(19, 712);
+            cuiButtonLogout.Name = "cuiButtonLogout";
+            cuiButtonLogout.NormalBackground = Color.Transparent;
+            cuiButtonLogout.NormalForeColor = Color.FromArgb(224, 242, 226);
+            cuiButtonLogout.NormalImageTint = Color.White;
+            cuiButtonLogout.NormalOutline = Color.Transparent;
+            cuiButtonLogout.OutlineThickness = 1F;
+            cuiButtonLogout.PressedBackground = Color.Transparent;
+            cuiButtonLogout.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuiButtonLogout.PressedImageTint = Color.White;
+            cuiButtonLogout.PressedOutline = Color.Transparent;
+            cuiButtonLogout.Rounding = new Padding(8);
+            cuiButtonLogout.Size = new Size(261, 62);
+            cuiButtonLogout.TabIndex = 0;
+            cuiButtonLogout.TextAlignment = StringAlignment.Center;
+            cuiButtonLogout.TextOffset = new Point(0, 0);
+            cuiButtonLogout.Click += cuiButtonLogout_Click;
             // 
             // UCDasboardAdmin
             // 
@@ -302,7 +302,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            Controls.Add(cuiButton1);
+            Controls.Add(cuiButtonLogout);
             Controls.Add(panelDasboardContainer);
             Controls.Add(cuiButtonTransaksi);
             Controls.Add(cuiButtonMenu);
@@ -325,6 +325,6 @@
         private CuoreUI.Controls.cuiButton cuiButtonMenu;
         private CuoreUI.Controls.cuiButton cuiButtonTransaksi;
         private Panel panelDasboardContainer;
-        private CuoreUI.Controls.cuiButton cuiButton1;
+        private CuoreUI.Controls.cuiButton cuiButtonLogout;
     }
 }

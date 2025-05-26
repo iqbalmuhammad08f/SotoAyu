@@ -1,3 +1,5 @@
+using SotoAyu.view;
+
 namespace SotoAyu
 {
     internal static class Program
@@ -11,8 +13,8 @@ namespace SotoAyu
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            //Application.Run(new MainForm());
-            Application.Run(new tester());
+            Application.Run(new MainForm());
+            //Application.Run(new BuatAkunKasir());
         }
     }
 }

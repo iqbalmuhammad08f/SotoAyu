@@ -13,11 +13,11 @@ namespace SotoAyu.view
 {
     public partial class UCLogin : UserControl
     {
-        private MainForm MainForm;
-        public UCLogin(MainForm mainForm)
+        MainForm MainForm;
+        public UCLogin(MainForm form)
         {
             InitializeComponent();
-            this.MainForm = mainForm;
+            MainForm = form;
         }
 
         private void buttonHidePw_Click(object sender, EventArgs e)
@@ -32,7 +32,7 @@ namespace SotoAyu.view
             {
                 if (result == "admin")
                 {
-                    MainForm.LoadControl(new UCDasboardAdmin());
+                    MainForm.LoadControl(new UCDasboardAdmin(MainForm));
                 }
                 else if (result == "kasir")
                 {

@@ -73,6 +73,16 @@ namespace SotoAyu.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Done {
+            get {
+                object obj = ResourceManager.GetObject("Done", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Hide {
             get {
                 object obj = ResourceManager.GetObject("Hide", resourceCulture);
@@ -86,6 +96,16 @@ namespace SotoAyu.Properties {
         internal static System.Drawing.Bitmap Logout {
             get {
                 object obj = ResourceManager.GetObject("Logout", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Multiply {
+            get {
+                object obj = ResourceManager.GetObject("Multiply", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
