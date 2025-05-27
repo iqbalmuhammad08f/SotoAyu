@@ -28,47 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cuiTextBoxEmail = new CuoreUI.Controls.cuiTextBox();
             cuiFormRounder1 = new CuoreUI.Components.cuiFormRounder();
             cuiButtonExit = new CuoreUI.Controls.cuiButton();
             cuiLabel1 = new CuoreUI.Controls.cuiLabel();
-            labelEmail = new Label();
             label1 = new Label();
             cuiTextBoxUsername = new CuoreUI.Controls.cuiTextBox();
             label2 = new Label();
             cuiTextBoxPassword = new CuoreUI.Controls.cuiTextBox();
             cuiButtonCreate = new CuoreUI.Controls.cuiButton();
             SuspendLayout();
-            // 
-            // cuiTextBoxEmail
-            // 
-            cuiTextBoxEmail.AutoValidate = AutoValidate.EnablePreventFocusChange;
-            cuiTextBoxEmail.BackColor = Color.Transparent;
-            cuiTextBoxEmail.BackgroundColor = Color.FromArgb(229, 229, 229);
-            cuiTextBoxEmail.BorderColor = Color.FromArgb(128, 128, 128, 128);
-            cuiTextBoxEmail.Content = "";
-            cuiTextBoxEmail.FocusBackgroundColor = Color.White;
-            cuiTextBoxEmail.FocusBorderColor = Color.Transparent;
-            cuiTextBoxEmail.FocusImageTint = Color.White;
-            cuiTextBoxEmail.Font = new Font("Alike", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiTextBoxEmail.ForeColor = Color.Black;
-            cuiTextBoxEmail.Image = null;
-            cuiTextBoxEmail.ImageExpand = new Point(0, 0);
-            cuiTextBoxEmail.ImageOffset = new Point(0, 0);
-            cuiTextBoxEmail.Location = new Point(83, 167);
-            cuiTextBoxEmail.Margin = new Padding(4);
-            cuiTextBoxEmail.Multiline = false;
-            cuiTextBoxEmail.Name = "cuiTextBoxEmail";
-            cuiTextBoxEmail.NormalImageTint = Color.White;
-            cuiTextBoxEmail.Padding = new Padding(26, 13, 26, 0);
-            cuiTextBoxEmail.PasswordChar = false;
-            cuiTextBoxEmail.PlaceholderColor = SystemColors.InactiveCaption;
-            cuiTextBoxEmail.PlaceholderText = "";
-            cuiTextBoxEmail.Rounding = new Padding(30);
-            cuiTextBoxEmail.Size = new Size(509, 52);
-            cuiTextBoxEmail.TabIndex = 3;
-            cuiTextBoxEmail.TextOffset = new Size(0, 0);
-            cuiTextBoxEmail.UnderlinedStyle = true;
             // 
             // cuiFormRounder1
             // 
@@ -129,25 +97,13 @@
             cuiLabel1.TabIndex = 7;
             cuiLabel1.VerticalAlignment = StringAlignment.Near;
             // 
-            // labelEmail
-            // 
-            labelEmail.AutoSize = true;
-            labelEmail.BackColor = Color.Transparent;
-            labelEmail.Font = new Font("Alike", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            labelEmail.ForeColor = Color.FromArgb(4, 32, 33);
-            labelEmail.Location = new Point(108, 132);
-            labelEmail.Name = "labelEmail";
-            labelEmail.Size = new Size(73, 31);
-            labelEmail.TabIndex = 8;
-            labelEmail.Text = "Email";
-            // 
             // label1
             // 
             label1.AutoSize = true;
             label1.BackColor = Color.Transparent;
             label1.Font = new Font("Alike", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label1.ForeColor = Color.FromArgb(4, 32, 33);
-            label1.Location = new Point(108, 230);
+            label1.Location = new Point(112, 187);
             label1.Name = "label1";
             label1.Size = new Size(118, 31);
             label1.TabIndex = 10;
@@ -168,7 +124,7 @@
             cuiTextBoxUsername.Image = null;
             cuiTextBoxUsername.ImageExpand = new Point(0, 0);
             cuiTextBoxUsername.ImageOffset = new Point(0, 0);
-            cuiTextBoxUsername.Location = new Point(83, 265);
+            cuiTextBoxUsername.Location = new Point(87, 222);
             cuiTextBoxUsername.Margin = new Padding(4);
             cuiTextBoxUsername.Multiline = false;
             cuiTextBoxUsername.Name = "cuiTextBoxUsername";
@@ -189,7 +145,7 @@
             label2.BackColor = Color.Transparent;
             label2.Font = new Font("Alike", 13.8F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.FromArgb(4, 32, 33);
-            label2.Location = new Point(108, 333);
+            label2.Location = new Point(112, 290);
             label2.Name = "label2";
             label2.Size = new Size(114, 31);
             label2.TabIndex = 12;
@@ -210,7 +166,7 @@
             cuiTextBoxPassword.Image = null;
             cuiTextBoxPassword.ImageExpand = new Point(0, 0);
             cuiTextBoxPassword.ImageOffset = new Point(0, 0);
-            cuiTextBoxPassword.Location = new Point(83, 368);
+            cuiTextBoxPassword.Location = new Point(87, 325);
             cuiTextBoxPassword.Margin = new Padding(4);
             cuiTextBoxPassword.Multiline = false;
             cuiTextBoxPassword.Name = "cuiTextBoxPassword";
@@ -246,7 +202,7 @@
             cuiButtonCreate.ImageAutoCenter = true;
             cuiButtonCreate.ImageExpand = new Point(0, 0);
             cuiButtonCreate.ImageOffset = new Point(0, 0);
-            cuiButtonCreate.Location = new Point(233, 427);
+            cuiButtonCreate.Location = new Point(239, 399);
             cuiButtonCreate.Name = "cuiButtonCreate";
             cuiButtonCreate.NormalBackground = Color.FromArgb(67, 119, 30);
             cuiButtonCreate.NormalForeColor = Color.White;
@@ -262,6 +218,7 @@
             cuiButtonCreate.TabIndex = 13;
             cuiButtonCreate.TextAlignment = StringAlignment.Center;
             cuiButtonCreate.TextOffset = new Point(0, 0);
+            cuiButtonCreate.Click += cuiButtonCreate_Click;
             // 
             // BuatAkunKasir
             // 
@@ -273,10 +230,8 @@
             Controls.Add(cuiTextBoxPassword);
             Controls.Add(label1);
             Controls.Add(cuiTextBoxUsername);
-            Controls.Add(labelEmail);
             Controls.Add(cuiLabel1);
             Controls.Add(cuiButtonExit);
-            Controls.Add(cuiTextBoxEmail);
             FormBorderStyle = FormBorderStyle.None;
             Location = new Point(131, 111);
             Name = "BuatAkunKasir";
@@ -287,12 +242,9 @@
         }
 
         #endregion
-
-        private CuoreUI.Controls.cuiTextBox cuiTextBoxEmail;
         private CuoreUI.Components.cuiFormRounder cuiFormRounder1;
         private CuoreUI.Controls.cuiButton cuiButtonExit;
         private CuoreUI.Controls.cuiLabel cuiLabel1;
-        private Label labelEmail;
         private Label label2;
         private CuoreUI.Controls.cuiTextBox cuiTextBoxPassword;
         private Label label1;

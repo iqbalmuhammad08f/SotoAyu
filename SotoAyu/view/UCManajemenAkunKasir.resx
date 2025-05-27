@@ -242,7 +242,7 @@
   <data name="cuiButtonCreateKasir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAScAAAGECAYAAAB00uYBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAGSZJREFUeF7t3W+MHdV5x/FV2etEojXOC5BKcJIXleibGivs2vzxnwUqEXx347vG
+        DAAACwwBP0AiyAAAGSZJREFUeF7t3W+MHdV5x/FV2etEojXOC5BKcJIXleibGivs2vzxnwUqEXx347vG
         QAEbjCMBKgXbCFIilUASmoTwt5ESVPcFECmJQkpimpeB4DYY3rQCQ0tViP8QYG2nlSAE47W99qme2Z1l
         9pk55869O/fe5858H+kjg+/cmbl39/x85syZmYGBDtXSkYFF5152SuPz9T/aOjxWe3y4Xnt5uF7bNzxa
         cwD6UL22b2h08Pmh0cGfD40O3js0Ojgi7Vy3fZMlOzo0OniPfIDUBwNQStLepROy9AsDn9OZ0POSBCWQ
@@ -355,7 +355,7 @@
   <data name="cuiButtonUpdateKasir.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAScAAAGECAYAAAB00uYBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DwAACw8BkvkDpQAAHIRJREFUeF7t3XuQX2V9x/HNrmOLo5aLzBTbP6itf7QzrdNpbRntjDhtZ8xmQ6Jj
+        DAAACwwBP0AiyAAAHIRJREFUeF7t3XuQX2V9x/HNrmOLo5aLzBTbP6itf7QzrdNpbRntjDhtZ8xmQ6Jj
         uLYjqFQi+1s2OLlgawiKUBRy8xK5yVIIYBVZKDVKUhOVEMDqJkG5BEO4KcKAqUBu+9vk6XzPL8/m7HOe
         5/md87t+s+f9nXlNwv7O75zz+22eD8/znFtPT5vq1OGeY2cO9sydVekZnlXpval/aMZY/9CMXbOGeg2A
         o0/SfiszNvZXZtzVP9S77AODPadKO3fbvsqSHe0f7LlUPoD7wQBMU9LeKz3DH7ig52Q3E7pekqAEEgDJ

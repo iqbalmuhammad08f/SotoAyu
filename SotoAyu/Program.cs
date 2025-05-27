@@ -14,7 +14,7 @@ namespace SotoAyu
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
             Application.Run(new MainForm());
-            //Application.Run(new BuatAkunKasir());
+            //Application.Run(new PerbaruiAkunKasir());
         }
     }
 }

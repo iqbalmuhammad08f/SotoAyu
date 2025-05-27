@@ -73,6 +73,7 @@
             cuiButtonInfoKasir.TabIndex = 0;
             cuiButtonInfoKasir.TextAlignment = StringAlignment.Center;
             cuiButtonInfoKasir.TextOffset = new Point(0, 0);
+            cuiButtonInfoKasir.Click += cuiButtonInfoKasir_Click;
             // 
             // cuiButtonCreateKasir
             // 
@@ -154,6 +155,7 @@
             cuiButtonUpdateKasir.TabIndex = 2;
             cuiButtonUpdateKasir.TextAlignment = StringAlignment.Center;
             cuiButtonUpdateKasir.TextOffset = new Point(0, 0);
+            cuiButtonUpdateKasir.Click += cuiButtonUpdateKasir_Click;
             // 
             // UCManajemenAkunKasir
             // 
