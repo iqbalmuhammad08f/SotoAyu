@@ -45,5 +45,10 @@ namespace SotoAyu.view
                 MessageBox.Show("Username atau password salah.");
             }
         }
+
+        private void UCLogin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

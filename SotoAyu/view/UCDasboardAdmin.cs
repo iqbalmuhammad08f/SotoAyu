@@ -49,6 +49,7 @@ namespace SotoAyu.view
         private void cuiButtonKaryawan_Click(object sender, EventArgs e)
         {
             highlightButton((cuiButton)sender);
+            LoadMenu(new UCManajemenKaryawan());
         }
 
         private void cuiButtonMenu_Click(object sender, EventArgs e)

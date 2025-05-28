@@ -207,9 +207,9 @@
             label4.ForeColor = Color.FromArgb(231, 0, 0);
             label4.Location = new Point(70, 381);
             label4.Name = "label4";
-            label4.Size = new Size(154, 27);
+            label4.Size = new Size(390, 27);
             label4.TabIndex = 27;
-            label4.Text = "*Perbarui Akun";
+            label4.Text = "*Perbarui Akun Password Harus Berbeda";
             // 
             // label5
             // 

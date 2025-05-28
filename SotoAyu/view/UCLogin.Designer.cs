@@ -190,6 +190,7 @@
             DoubleBuffered = true;
             Name = "UCLogin";
             Size = new Size(1222, 777);
+            Load += UCLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }
