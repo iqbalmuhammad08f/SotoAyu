@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using SotoAyu.controller;
+using SotoAyu.model;
 
 namespace SotoAyu.view
 {
@@ -15,6 +17,7 @@ namespace SotoAyu.view
         public UCManajemenKaryawan()
         {
             InitializeComponent();
+            loadKaryawan();
         }
 
         private void cuiButtonTambahKaryawan_Click(object sender, EventArgs e)
@@ -22,6 +25,7 @@ namespace SotoAyu.view
             TambahKaryawan tambahKaryawan = new TambahKaryawan();
             centerPopUp(tambahKaryawan);
             tambahKaryawan.ShowDialog();
+            loadKaryawan();
         }
         public void centerPopUp(Form form)
         {
@@ -33,5 +37,32 @@ namespace SotoAyu.view
             form.StartPosition = FormStartPosition.Manual;
             form.Location = new Point(centerX, centerY);
         }
+        private void loadKaryawan()
+        {
+            flowLayoutPanelKaryawan.Controls.Clear();
+            var list_karyawan = KaryawanController.GetKaryawans();
+            foreach (var karyawan in list_karyawan)
+            {
+                flowLayoutPanelKaryawan.Controls.Add(new UCListKaryawan(karyawan));
+            }
+        }
+        private void loadKaryawan(string search)
+        {
+            flowLayoutPanelKaryawan.Controls.Clear();
+            var list_karyawan = KaryawanController.GetKaryawans();
+            var filter = list_karyawan.Where(a => a.nama.Contains(search));
+            foreach (var karyawan in filter)
+            {
+                flowLayoutPanelKaryawan.Controls.Add(new UCListKaryawan(karyawan));
+            }
+
+        }
+
+        private void cuiButtonCreate_Click(object sender, EventArgs e)
+        {
+            string search = cuiTextBoxSearch.Content;
+            loadKaryawan(search);
+        }
     }
+
 }

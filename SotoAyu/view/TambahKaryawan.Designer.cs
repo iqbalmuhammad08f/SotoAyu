@@ -56,13 +56,13 @@
             // 
             cuiLabel2.BackColor = Color.Transparent;
             cuiLabel2.Content = "Nama\\ Lengkap";
-            cuiLabel2.Font = new Font("Alike", 7.799999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiLabel2.ForeColor = Color.FromArgb(35, 48, 8);
+            cuiLabel2.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel2.ForeColor = Color.FromArgb(4, 32, 33);
             cuiLabel2.HorizontalAlignment = StringAlignment.Center;
-            cuiLabel2.Location = new Point(109, 94);
+            cuiLabel2.Location = new Point(96, 105);
             cuiLabel2.Margin = new Padding(4, 5, 4, 5);
             cuiLabel2.Name = "cuiLabel2";
-            cuiLabel2.Size = new Size(111, 20);
+            cuiLabel2.Size = new Size(158, 21);
             cuiLabel2.TabIndex = 17;
             cuiLabel2.VerticalAlignment = StringAlignment.Near;
             // 
@@ -74,17 +74,17 @@
             cuiTextBoxNama.FocusBackgroundColor = Color.White;
             cuiTextBoxNama.FocusBorderColor = Color.White;
             cuiTextBoxNama.FocusImageTint = Color.White;
-            cuiTextBoxNama.Font = new Font("Microsoft Sans Serif", 9.5F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiTextBoxNama.ForeColor = Color.Gray;
+            cuiTextBoxNama.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiTextBoxNama.ForeColor = Color.Black;
             cuiTextBoxNama.Image = null;
             cuiTextBoxNama.ImageExpand = new Point(0, 0);
             cuiTextBoxNama.ImageOffset = new Point(0, 0);
-            cuiTextBoxNama.Location = new Point(109, 111);
+            cuiTextBoxNama.Location = new Point(109, 130);
             cuiTextBoxNama.Margin = new Padding(4);
             cuiTextBoxNama.Multiline = false;
             cuiTextBoxNama.Name = "cuiTextBoxNama";
             cuiTextBoxNama.NormalImageTint = Color.White;
-            cuiTextBoxNama.Padding = new Padding(18, 9, 18, 0);
+            cuiTextBoxNama.Padding = new Padding(22, 7, 22, 0);
             cuiTextBoxNama.PasswordChar = false;
             cuiTextBoxNama.PlaceholderColor = SystemColors.WindowText;
             cuiTextBoxNama.PlaceholderText = "";
@@ -98,10 +98,10 @@
             // 
             cuiLabel3.BackColor = Color.Transparent;
             cuiLabel3.Content = "Role";
-            cuiLabel3.Font = new Font("Alike", 7.799999F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiLabel3.ForeColor = Color.FromArgb(35, 48, 8);
+            cuiLabel3.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel3.ForeColor = Color.FromArgb(4, 32, 33);
             cuiLabel3.HorizontalAlignment = StringAlignment.Center;
-            cuiLabel3.Location = new Point(118, 157);
+            cuiLabel3.Location = new Point(114, 170);
             cuiLabel3.Margin = new Padding(4, 5, 4, 5);
             cuiLabel3.Name = "cuiLabel3";
             cuiLabel3.Size = new Size(42, 20);
@@ -207,17 +207,17 @@
             cuiComboBoxRole.DropDownOutlineColor = Color.Transparent;
             cuiComboBoxRole.ExpandArrowColor = Color.Gray;
             cuiComboBoxRole.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiComboBoxRole.ForeColor = Color.Gray;
+            cuiComboBoxRole.ForeColor = Color.Black;
             cuiComboBoxRole.Items = new string[]
     {
     "Kasir",
     "Chef",
     "Pelayan"
     };
-            cuiComboBoxRole.Location = new Point(109, 187);
+            cuiComboBoxRole.Location = new Point(109, 196);
             cuiComboBoxRole.Margin = new Padding(4, 5, 4, 5);
             cuiComboBoxRole.Name = "cuiComboBoxRole";
-            cuiComboBoxRole.NoSelectionDropdownText = "Empty";
+            cuiComboBoxRole.NoSelectionDropdownText = "";
             cuiComboBoxRole.NoSelectionText = "Role";
             cuiComboBoxRole.OutlineColor = Color.FromArgb(64, 128, 128, 128);
             cuiComboBoxRole.OutlineThickness = 1F;

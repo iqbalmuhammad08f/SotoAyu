@@ -26,18 +26,15 @@ namespace SotoAyu.view
         private void cuiButtonAccept_Click(object sender, EventArgs e)
         {
             string nama = cuiTextBoxNama.Content;
-            string role = cuiComboBoxRole.SelectedItem.ToString();
-            bool isValid = !string.IsNullOrWhiteSpace(nama)
-                           && !string.IsNullOrWhiteSpace(role)
-                           && nama.All(char.IsLetter)
-                           && role.All(char.IsLetter);
+            string role = cuiComboBoxRole.SelectedItem.ToString().ToLower();
 
-            if (!isValid)
+            if (string.IsNullOrWhiteSpace(nama) || nama.Any(char.IsDigit) || role == string.Empty)
             {
                 Notif notif = new Notif();
                 notif.setPesan("Isi format harus sesuai dan tidak boleh angka");
                 notif.ShowDialog();
                 cuiTextBoxNama.Content = "";
+                cuiComboBoxRole.SelectedItem = string.Empty;
             }
             else
             {

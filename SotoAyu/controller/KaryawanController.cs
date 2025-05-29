@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
+using SotoAyu.model;
 
 namespace SotoAyu.controller
 {
@@ -22,6 +23,30 @@ namespace SotoAyu.controller
                 int rowsAffected = cmd.ExecuteNonQuery();
                 return rowsAffected > 0;
             }
+        }
+        public static List<Karyawan> GetKaryawans()
+        {
+            var list_karyawan = new List<Karyawan>();
+            using var conn = database.GetConnection();
+            conn.Open();
+            string query = "SELECT * FROM karyawan";
+            using (var cmd = new NpgsqlCommand(query, conn))
+            {
+                using var reader = cmd.ExecuteReader();
+                while (reader.Read())
+                {
+                    Karyawan karyawan = new Karyawan
+                    {
+                        id_karywan = reader.GetInt32(0),
+                        nama = reader.GetString(1),
+                        role = reader.GetString(2),
+                        status = reader.GetBoolean(3)
+                    };
+                    list_karyawan.Add(karyawan);
+                }
+            }
+            return list_karyawan;
+
         }
     }
 }

@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace SotoAyu.model
 {
-    internal class Karyawan
+    public class Karyawan
     {
         public int id_karywan { get; set; }
-        public string username { get; set; }
-        public string password { get; set; }
+        public string nama { get; set; }
+        public string role { get; set; }
+        public bool status { get; set; }
     }
 }
