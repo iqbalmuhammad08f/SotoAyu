@@ -41,7 +41,8 @@ namespace SotoAyu.view
         {
             flowLayoutPanelKaryawan.Controls.Clear();
             var list_karyawan = KaryawanController.GetKaryawans();
-            foreach (var karyawan in list_karyawan)
+            var filter = list_karyawan.Where(a => a.status == true);
+            foreach (var karyawan in filter)
             {
                 flowLayoutPanelKaryawan.Controls.Add(new UCListKaryawan(karyawan));
             }

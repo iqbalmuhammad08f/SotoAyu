@@ -12,31 +12,33 @@ namespace SotoAyu.controller
     {
         public static string login(string username, string password)
         {
-            using var conn = database.GetConnection();
-            conn.Open();
-            string queryAdmin = "SELECT username, nama FROM admin WHERE username = @user AND password = @pass";
-            using (var cmd = new NpgsqlCommand(queryAdmin, conn))
+            using (var conn = database.GetConnection())
             {
-                cmd.Parameters.AddWithValue("user", username);
-                cmd.Parameters.AddWithValue("pass", password);
-                using var reader = cmd.ExecuteReader();
-                if (reader.Read())
+                conn.Open();
+                string queryAdmin = "SELECT username, nama FROM admin WHERE username = @user AND password = @pass";
+                using (var cmd = new NpgsqlCommand(queryAdmin, conn))
                 {
-                    return "admin";
+                    cmd.Parameters.AddWithValue("user", username);
+                    cmd.Parameters.AddWithValue("pass", password);
+                    using var reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        return "admin";
+                    }
                 }
-            }
-            string queryKasir = "SELECT username, password FROM kasir WHERE username = @user AND password = @pass";
-            using (var cmd = new NpgsqlCommand(queryKasir, conn))
-            {
-                cmd.Parameters.AddWithValue("user", username);
-                cmd.Parameters.AddWithValue("pass", password);
-                using var reader = cmd.ExecuteReader();
-                if (reader.Read())
+                string queryKasir = "SELECT username, password FROM kasir WHERE username = @user AND password = @pass";
+                using (var cmd = new NpgsqlCommand(queryKasir, conn))
                 {
-                    return "kasir";
+                    cmd.Parameters.AddWithValue("user", username);
+                    cmd.Parameters.AddWithValue("pass", password);
+                    using var reader = cmd.ExecuteReader();
+                    if (reader.Read())
+                    {
+                        return "kasir";
+                    }
                 }
+                return null;
             }
-            return null;
 
         }
     }

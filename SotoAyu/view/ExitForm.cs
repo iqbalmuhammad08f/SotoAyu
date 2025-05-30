@@ -17,6 +17,7 @@ namespace SotoAyu.view
         {
             InitializeComponent();
             MainForm = form;
+
         }
 
         private void cuiButtonExit_Click(object sender, EventArgs e)

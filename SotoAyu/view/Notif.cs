@@ -12,6 +12,7 @@ namespace SotoAyu.view
 {
     public partial class Notif : Form
     {
+        public bool UserConfirmed = false;
         public Notif()
         {
             InitializeComponent();
@@ -22,6 +23,12 @@ namespace SotoAyu.view
         }
 
         private void cuiButtonAccept_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            UserConfirmed = true;
+        }
+
+        private void cuiButtonExit_Click(object sender, EventArgs e)
         {
             this.Close();
         }

@@ -31,6 +31,7 @@
             labelNotif = new Label();
             cuiButtonAccept = new CuoreUI.Controls.cuiButton();
             cuiFormRounder1 = new CuoreUI.Components.cuiFormRounder();
+            cuiButtonExit = new CuoreUI.Controls.cuiButton();
             SuspendLayout();
             // 
             // labelNotif
@@ -41,7 +42,7 @@
             labelNotif.Name = "labelNotif";
             labelNotif.Size = new Size(264, 70);
             labelNotif.TabIndex = 1;
-            labelNotif.Text = "Apakah yakin Ingin keluar?";
+            labelNotif.Text = "Apakah yakin Ingin menghapus?";
             labelNotif.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // cuiButtonAccept
@@ -53,7 +54,7 @@
             cuiButtonAccept.CheckedForeColor = Color.White;
             cuiButtonAccept.CheckedImageTint = Color.White;
             cuiButtonAccept.CheckedOutline = Color.FromArgb(255, 106, 0);
-            cuiButtonAccept.Content = "Ascept";
+            cuiButtonAccept.Content = "Oke";
             cuiButtonAccept.DialogResult = DialogResult.None;
             cuiButtonAccept.Font = new Font("Archivo Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiButtonAccept.ForeColor = Color.White;
@@ -90,11 +91,51 @@
             cuiFormRounder1.Rounding = 10;
             cuiFormRounder1.TargetForm = this;
             // 
+            // cuiButtonExit
+            // 
+            cuiButtonExit.CheckButton = false;
+            cuiButtonExit.Checked = false;
+            cuiButtonExit.CheckedBackground = Color.FromArgb(255, 106, 0);
+            cuiButtonExit.CheckedForeColor = Color.White;
+            cuiButtonExit.CheckedImageTint = Color.White;
+            cuiButtonExit.CheckedOutline = Color.FromArgb(255, 106, 0);
+            cuiButtonExit.Content = "";
+            cuiButtonExit.DialogResult = DialogResult.None;
+            cuiButtonExit.Font = new Font("Microsoft Sans Serif", 9.75F);
+            cuiButtonExit.ForeColor = Color.Black;
+            cuiButtonExit.HoverBackground = Color.FromArgb(231, 0, 0);
+            cuiButtonExit.HoveredImageTint = Color.White;
+            cuiButtonExit.HoverForeColor = Color.Black;
+            cuiButtonExit.HoverOutline = Color.FromArgb(32, 128, 128, 128);
+            cuiButtonExit.Image = Properties.Resources.Multiply;
+            cuiButtonExit.ImageAutoCenter = true;
+            cuiButtonExit.ImageExpand = new Point(12, 12);
+            cuiButtonExit.ImageOffset = new Point(0, 0);
+            cuiButtonExit.Location = new Point(363, 12);
+            cuiButtonExit.Name = "cuiButtonExit";
+            cuiButtonExit.NormalBackground = Color.FromArgb(231, 0, 0);
+            cuiButtonExit.NormalForeColor = Color.Black;
+            cuiButtonExit.NormalImageTint = Color.White;
+            cuiButtonExit.NormalOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButtonExit.OutlineThickness = 1F;
+            cuiButtonExit.PressedBackground = Color.WhiteSmoke;
+            cuiButtonExit.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuiButtonExit.PressedImageTint = Color.White;
+            cuiButtonExit.PressedOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButtonExit.Rounding = new Padding(8);
+            cuiButtonExit.Size = new Size(57, 47);
+            cuiButtonExit.TabIndex = 15;
+            cuiButtonExit.TextAlignment = StringAlignment.Center;
+            cuiButtonExit.TextOffset = new Point(0, 0);
+            cuiButtonExit.Visible = false;
+            cuiButtonExit.Click += cuiButtonExit_Click;
+            // 
             // Notif
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(432, 233);
+            Controls.Add(cuiButtonExit);
             Controls.Add(cuiButtonAccept);
             Controls.Add(labelNotif);
             FormBorderStyle = FormBorderStyle.None;
@@ -109,5 +150,6 @@
         private Label labelNotif;
         private CuoreUI.Controls.cuiButton cuiButtonAccept;
         private CuoreUI.Components.cuiFormRounder cuiFormRounder1;
+        private CuoreUI.Controls.cuiButton cuiButtonExit;
     }
 }

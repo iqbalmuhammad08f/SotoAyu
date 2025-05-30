@@ -42,7 +42,9 @@ namespace SotoAyu.view
             }
             else
             {
-                MessageBox.Show("Username atau password salah.");
+                Notif notif = new Notif();
+                notif.setPesan("Username atau password salah");
+                notif.ShowDialog();
             }
         }
 

@@ -119,7 +119,7 @@
             cuiButtonTambahKaryawan.DialogResult = DialogResult.None;
             cuiButtonTambahKaryawan.Font = new Font("Archivo Black", 11.999999F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiButtonTambahKaryawan.ForeColor = Color.White;
-            cuiButtonTambahKaryawan.HoverBackground = Color.White;
+            cuiButtonTambahKaryawan.HoverBackground = Color.FromArgb(67, 119, 30);
             cuiButtonTambahKaryawan.HoveredImageTint = Color.White;
             cuiButtonTambahKaryawan.HoverForeColor = Color.Black;
             cuiButtonTambahKaryawan.HoverOutline = Color.FromArgb(32, 128, 128, 128);
@@ -191,7 +191,7 @@
             label2.BackColor = Color.FromArgb(108, 156, 8);
             label2.Font = new Font("Alike", 16.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(651, 230);
+            label2.Location = new Point(508, 230);
             label2.Name = "label2";
             label2.Size = new Size(70, 36);
             label2.TabIndex = 21;
@@ -243,7 +243,7 @@
             cuiButton2.PressedImageTint = Color.White;
             cuiButton2.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             cuiButton2.Rounding = new Padding(20);
-            cuiButton2.Size = new Size(787, 48);
+            cuiButton2.Size = new Size(624, 48);
             cuiButton2.TabIndex = 19;
             cuiButton2.TextAlignment = StringAlignment.Center;
             cuiButton2.TextOffset = new Point(0, 0);

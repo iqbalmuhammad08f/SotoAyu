@@ -6,13 +6,14 @@ using System.Threading.Tasks;
 
 namespace SotoAyu.model
 {
-    internal class menu
+    public class Menu
     {
         public int id_menu { get; set; }
         public string Nama_menu { get; set; }
         public string Kategori_Menu { get; set; }
         public float Harga_menu { get; set; }
-        public string Gambar_menu { get; set; }
+        public byte[] Gambar_menu { get; set; }
         public bool Ketersediaan { get; set; }
+        public bool status { get; set; }
     }
 }

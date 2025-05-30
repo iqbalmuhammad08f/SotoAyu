@@ -250,7 +250,7 @@
             // 
             // panelDasboardContainer
             // 
-            panelDasboardContainer.BackColor = SystemColors.ControlDarkDark;
+            panelDasboardContainer.BackColor = Color.White;
             panelDasboardContainer.Dock = DockStyle.Right;
             panelDasboardContainer.Location = new Point(312, 0);
             panelDasboardContainer.Name = "panelDasboardContainer";
