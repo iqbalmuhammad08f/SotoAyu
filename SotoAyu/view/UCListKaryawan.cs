@@ -26,6 +26,7 @@ namespace SotoAyu.view
         private void cuiButtonAccept_Click(object sender, EventArgs e)
         {
             Notif notif = new Notif();
+            notif.visibleExit(true);
             notif.ShowDialog();
 
             if (notif.UserConfirmed)

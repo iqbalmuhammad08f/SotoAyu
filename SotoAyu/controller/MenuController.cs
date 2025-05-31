@@ -61,5 +61,32 @@ namespace SotoAyu.controller
                 return list_menu;
             }
         }
+        public static void updateMenu(Menu menu, int harga)
+        {
+            using(var conn = database.GetConnection())
+            {
+                conn.Open();
+                string query = "UPDATE menu SET harga = @harga WHERE id_menu = @id";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", menu.id_menu);
+                    cmd.Parameters.AddWithValue("@harga", harga);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
+        public static void hapusMenu(Menu menu)
+        {
+            using(var conn = database.GetConnection())
+            {
+                conn.Open();
+                string query = "UPDATE menu SET status = false WHERE id_menu = @id";
+                using(var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", menu.id_menu);
+                    cmd.ExecuteNonQuery();
+                }
+            }
+        }
     }
 }

@@ -69,7 +69,7 @@ namespace SotoAyu.view
                 MenuController.tambahmenu(nama, harga, kategori, imageBytes);
                 notif.setPesan("Menu berhasil ditambahkan");
                 notif.ShowDialog();
-                this.Close();
+                
             }
         }
     }

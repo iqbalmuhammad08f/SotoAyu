@@ -81,13 +81,13 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BorderStyle = BorderStyle.FixedSingle;
+            BackColor = SystemColors.Control;
             Controls.Add(cuiLabelHarga);
             Controls.Add(cuiLabelNama);
             Controls.Add(cuiPictureBoxGambar);
             Margin = new Padding(20);
             Name = "UCListMenu";
-            Size = new Size(175, 211);
+            Size = new Size(177, 213);
             ResumeLayout(false);
         }
 

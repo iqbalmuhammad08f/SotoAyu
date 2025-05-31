@@ -48,14 +48,14 @@ namespace SotoAyu.view
             loadMenu();
 
         }
-        private void loadMenu()
+        public void loadMenu()
         {
             flowLayoutLoadMakanan.Controls.Clear();
             var list_makanan = MenuController.GetMenus();
             var filterMakanan = list_makanan.Where(a => a.Kategori_Menu == "makanan" && a.status == true);
             foreach(var makanan in filterMakanan)
             {
-                flowLayoutLoadMakanan.Controls.Add(new UCListMenu(makanan));
+                flowLayoutLoadMakanan.Controls.Add(new UCListMenu(makanan,this));
             }
 
             flowLayoutLoadMinuman.Controls.Clear();
@@ -63,7 +63,7 @@ namespace SotoAyu.view
             var filterMinuman = list_makanan.Where(a => a.Kategori_Menu == "minuman" && a.status == true);
             foreach (var minuman in filterMinuman)
             {
-                flowLayoutLoadMinuman.Controls.Add(new UCListMenu(minuman));
+                flowLayoutLoadMinuman.Controls.Add(new UCListMenu(minuman,this));
             }
 
         }

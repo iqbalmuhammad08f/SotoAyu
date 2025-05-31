@@ -32,5 +32,9 @@ namespace SotoAyu.view
         {
             this.Close();
         }
+        public void visibleExit(bool nilai)
+        {
+            cuiButtonExit.Visible = nilai;
+        }
     }
 }
