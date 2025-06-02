@@ -6,11 +6,12 @@ using System.Threading.Tasks;
 
 namespace SotoAyu.model
 {
-    internal class Transaksi
+    public class Transaksi
     {
         public int id_transaksi { get; set; }
         public DateTime Tanggal { get; set; }
         public int Nama_operator { get; set; }
         public int Total_transaksi { get; set; }
+        public string Metode_pembayaran { get; set; }
     }
 }

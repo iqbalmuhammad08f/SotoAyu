@@ -18,6 +18,7 @@ namespace SotoAyu.view
         {
             InitializeComponent();
             MainForm = form;
+            LoadMenu(new UCLaporanPenjualan());
         }
         private void highlightButton(cuiButton activeButton)
         {
@@ -37,6 +38,7 @@ namespace SotoAyu.view
         private void cuiButtonLaporan_Click(object sender, EventArgs e)
         {
             highlightButton((cuiButton)sender);
+            LoadMenu(new UCLaporanPenjualan());
         }
 
         private void cuiButtonKasir_Click(object sender, EventArgs e)
@@ -62,6 +64,7 @@ namespace SotoAyu.view
         private void cuiButtonTransaksi_Click(object sender, EventArgs e)
         {
             highlightButton((cuiButton)sender);
+            LoadMenu(new UCTransaksiAdmin());
 
         }
 

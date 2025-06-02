@@ -36,7 +36,7 @@ namespace SotoAyu.view
                 }
                 else if (result == "kasir")
                 {
-                    MainForm.LoadControl(new UCDasboardKasir());
+                    MainForm.LoadControl(new UCDasboardKasir(MainForm));
                 }
                 this.Hide();
             }

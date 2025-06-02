@@ -9,7 +9,7 @@ namespace SotoAyu
         {
             InitializeComponent();
             //LoadControl(new UCLogin(this));
-            LoadControl(new UCDasboardAdmin(this));
+            LoadControl(new UCDasboardKasir(this));
 
         }
 

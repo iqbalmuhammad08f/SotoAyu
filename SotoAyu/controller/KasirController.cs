@@ -37,7 +37,7 @@ namespace SotoAyu.controller
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     using var reader = cmd.ExecuteReader();
-                    if (reader.Read())
+                    if (reader.Read()) 
                     {
                         return new Kasir
                         {
