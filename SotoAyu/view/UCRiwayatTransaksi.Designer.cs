@@ -28,24 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            panel1 = new Panel();
             cuiTextBoxSearch = new CuoreUI.Controls.cuiTextBox();
             cuiButtonCreate = new CuoreUI.Controls.cuiButton();
             cuiButton2 = new CuoreUI.Controls.cuiButton();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
-            label4 = new Label();
+            cuiLabel1 = new CuoreUI.Controls.cuiLabel();
+            cuiLabel2 = new CuoreUI.Controls.cuiLabel();
+            cuiLabel3 = new CuoreUI.Controls.cuiLabel();
+            cuiLabel4 = new CuoreUI.Controls.cuiLabel();
+            flowLayoutPanelListTransaksi = new FlowLayoutPanel();
             SuspendLayout();
-            // 
-            // panel1
-            // 
-            panel1.AutoScroll = true;
-            panel1.Location = new Point(31, 218);
-            panel1.Name = "panel1";
-            panel1.Padding = new Padding(15);
-            panel1.Size = new Size(877, 514);
-            panel1.TabIndex = 0;
             // 
             // cuiTextBoxSearch
             // 
@@ -154,77 +145,95 @@
             cuiButton2.TextAlignment = StringAlignment.Center;
             cuiButton2.TextOffset = new Point(0, 0);
             // 
-            // label1
+            // cuiLabel1
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.White;
-            label1.ForeColor = Color.FromArgb(67, 119, 30);
-            label1.Location = new Point(80, 161);
-            label1.Name = "label1";
-            label1.Size = new Size(22, 20);
-            label1.TabIndex = 22;
-            label1.Text = "id";
+            cuiLabel1.BackColor = Color.White;
+            cuiLabel1.Content = "No";
+            cuiLabel1.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel1.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabel1.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel1.Location = new Point(41, 152);
+            cuiLabel1.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel1.Name = "cuiLabel1";
+            cuiLabel1.Size = new Size(61, 34);
+            cuiLabel1.TabIndex = 22;
+            cuiLabel1.VerticalAlignment = StringAlignment.Center;
             // 
-            // label2
+            // cuiLabel2
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.White;
-            label2.ForeColor = Color.FromArgb(67, 119, 30);
-            label2.Location = new Point(249, 161);
-            label2.Name = "label2";
-            label2.Size = new Size(87, 20);
-            label2.TabIndex = 23;
-            label2.Text = "nama menu";
+            cuiLabel2.BackColor = Color.White;
+            cuiLabel2.Content = "Tanggal";
+            cuiLabel2.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel2.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabel2.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel2.Location = new Point(110, 152);
+            cuiLabel2.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel2.Name = "cuiLabel2";
+            cuiLabel2.Size = new Size(281, 34);
+            cuiLabel2.TabIndex = 23;
+            cuiLabel2.VerticalAlignment = StringAlignment.Center;
             // 
-            // label3
+            // cuiLabel3
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.White;
-            label3.ForeColor = Color.FromArgb(67, 119, 30);
-            label3.Location = new Point(512, 161);
-            label3.Name = "label3";
-            label3.Size = new Size(99, 20);
-            label3.TabIndex = 24;
-            label3.Text = "total pesanan";
+            cuiLabel3.BackColor = Color.White;
+            cuiLabel3.Content = "Total";
+            cuiLabel3.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel3.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabel3.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel3.Location = new Point(399, 152);
+            cuiLabel3.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel3.Name = "cuiLabel3";
+            cuiLabel3.Size = new Size(281, 34);
+            cuiLabel3.TabIndex = 24;
+            cuiLabel3.VerticalAlignment = StringAlignment.Center;
             // 
-            // label4
+            // cuiLabel4
             // 
-            label4.AutoSize = true;
-            label4.BackColor = Color.White;
-            label4.ForeColor = Color.FromArgb(67, 119, 30);
-            label4.Location = new Point(758, 161);
-            label4.Name = "label4";
-            label4.Size = new Size(101, 20);
-            label4.TabIndex = 25;
-            label4.Text = "total transaksi";
+            cuiLabel4.BackColor = Color.White;
+            cuiLabel4.Content = "Info";
+            cuiLabel4.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel4.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabel4.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel4.Location = new Point(688, 152);
+            cuiLabel4.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel4.Name = "cuiLabel4";
+            cuiLabel4.Size = new Size(208, 34);
+            cuiLabel4.TabIndex = 25;
+            cuiLabel4.VerticalAlignment = StringAlignment.Center;
+            // 
+            // flowLayoutPanelListTransaksi
+            // 
+            flowLayoutPanelListTransaksi.AutoScroll = true;
+            flowLayoutPanelListTransaksi.Location = new Point(31, 199);
+            flowLayoutPanelListTransaksi.Name = "flowLayoutPanelListTransaksi";
+            flowLayoutPanelListTransaksi.Size = new Size(901, 397);
+            flowLayoutPanelListTransaksi.TabIndex = 26;
             // 
             // UCRiwayatTransaksi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(label4);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(flowLayoutPanelListTransaksi);
+            Controls.Add(cuiLabel4);
+            Controls.Add(cuiLabel3);
+            Controls.Add(cuiLabel2);
+            Controls.Add(cuiLabel1);
             Controls.Add(cuiButton2);
             Controls.Add(cuiButtonCreate);
             Controls.Add(cuiTextBoxSearch);
-            Controls.Add(panel1);
             Name = "UCRiwayatTransaksi";
             Size = new Size(976, 777);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Panel panel1;
         private CuoreUI.Controls.cuiTextBox cuiTextBoxSearch;
         private CuoreUI.Controls.cuiButton cuiButtonCreate;
         private CuoreUI.Controls.cuiButton cuiButton2;
-        private Label label1;
-        private Label label2;
-        private Label label3;
-        private Label label4;
+        private CuoreUI.Controls.cuiLabel cuiLabel1;
+        private CuoreUI.Controls.cuiLabel cuiLabel2;
+        private CuoreUI.Controls.cuiLabel cuiLabel3;
+        private CuoreUI.Controls.cuiLabel cuiLabel4;
+        private FlowLayoutPanel flowLayoutPanelListTransaksi;
     }
 }

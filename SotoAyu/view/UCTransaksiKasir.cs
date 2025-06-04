@@ -24,7 +24,7 @@ namespace SotoAyu.view
             loadKaryawan();
             loadMenu();
         }
-
+        public bool memilikiOrder => listmenuOrder != null && listmenuOrder.Count > 0;
         private void loadKaryawan()
         {
             var list_karyawan = KaryawanController.GetKaryawans();
@@ -112,7 +112,7 @@ namespace SotoAyu.view
             activeButton.HoverBackground = Color.FromArgb(32, 128, 128, 128);
         }
 
-        private void simpanOrder()
+        private int simpanOrder()
         {
             string namaKaryawan = cuiComboBoxKaryawan.SelectedItem.ToString();
             int idKaryawan = karyawanLookup[namaKaryawan];
@@ -123,7 +123,7 @@ namespace SotoAyu.view
                 TransaksiController.InsertTransaksiDetail(idTransaksi, order.menu.id_menu, order.qty, order.Subtotal
                 );
             }
-
+            return idTransaksi;
 
 
         }
@@ -154,18 +154,25 @@ namespace SotoAyu.view
             }
             else
             {
-                simpanOrder();
-                string nama = cuiComboBoxKaryawan.SelectedItem.ToString();
-                int idKaryawan = karyawanLookup[nama];
-                Payment payment = new Payment(idKaryawan);
+                int idTransaksi = simpanOrder();
+                Payment payment = new Payment(idTransaksi);
+                centerPopUp(payment);
                 payment.ShowDialog();
                 listmenuOrder.Clear();
                 flowLayoutPanelOrder.Controls.Clear();
                 loadTotal();
 
-
-
             }
+        }
+        public void centerPopUp(Form form)
+        {
+            Point posisiGlobal = this.PointToScreen(Point.Empty);
+
+            int centerX = posisiGlobal.X + (this.Width - form.Width) / 2;
+            int centerY = posisiGlobal.Y + (this.Height - form.Height) / 2;
+
+            form.StartPosition = FormStartPosition.Manual;
+            form.Location = new Point(centerX, centerY);
         }
     }
 }

@@ -120,11 +120,11 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="cuiCalendarDatePicker1.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAADOSURBVEhL1ZVBCsIwEEXrHbxaL1DBo4m46MK94FlcuPYGT6YmUsf8plMXxQdZmOe8QgNN06wF
-        sLfl9zM1XwW42vL7mZovArTAMQ0/cgDYAuccnfA22/ruANDx4jYKXJKb+wCbNTrftz/1wB3YpN+Tr6Dk
-        bTY1+vF+lh8DtUNU3nfqIojsSBFEdpIYDu7H9T78VR7wLYLIjhRBZEeKILIjRRDZkSKI7EgRRHakCCI7
-        UgSRHf81XULta7pz98GSpe8DI91op8Lg3HWQN9rf8gQXS6cRcFb1JAAAAABJRU5ErkJggg==
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAM5JREFUSEvV
+        lUEKwjAQResdvFovUMGjibjowr3gWVy49gZPpiZSx/ymUxfFB1mY57xCA03TrAWwt+X3MzVfBbja8vuZ
+        mi8CtMAxDT9yANgC5xyd8Dbb+u4A0PHiNgpckpv7AJs1Ot+3P/XAHdik35OvoORtNjX68X6WHwO1Q1Te
+        d+oiiOxIEUR2khgO7sf1PvxVHvAtgsiOFEFkR4ogsiNFENmRIojsSBFEdqQIIjtSBJEd/zVdQu1runP3
+        wZKl7wMj3WinwuDcdZA32t/yBBdLpxFwVvUkAAAAAElFTkSuQmCC
 </value>
   </data>
   <data name="cuiCalendarDatePicker2.Icon" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -139,7 +139,7 @@
   <data name="$this.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAABBUAAAQACAYAAAC+mmEvAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EgAACxIB0t1+/AAAJBhJREFUeF7t2EGuJDuZgNHaPDACNgBsAlgHsAlgBcAEqpVI0c/8z46I+gq1enCO
+        DwAACw8BkvkDpQAAJBhJREFUeF7t2EGuJDuZgNHaPDACNgBsAlgHsAlgBcAEqpVI0c/8z46I+gq1enCO
         ZGVmhO105r05+b58BQAAAAi+zAsAAAAAb4gKAAAAQCIqAAAAAImoAAAAACSiAgAAAJCICgAAAEAiKgAA
         AACJqAAAAAAkogIAAACQiAoAAABAIioAAAAAiagAAAAAJKICAAAAkIgKAAAAQCIqAAAAAImoAAAAACSi
         AgAAAJCICgAAAEAiKgAAAACJqAAAAAAkogIAAACQiAoAAABAIioAAAAAiagAAAAAJKICAAAAkIgKAAAA

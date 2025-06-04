@@ -8,8 +8,8 @@ namespace SotoAyu
         public MainForm()
         {
             InitializeComponent();
-            //LoadControl(new UCLogin(this));
-            LoadControl(new UCDasboardKasir(this));
+            LoadControl(new UCLogin(this));
+            //LoadControl(new UCDasboardKasir(this));
 
         }
 

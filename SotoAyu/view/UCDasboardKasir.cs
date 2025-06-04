@@ -8,17 +8,21 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using CuoreUI.Controls;
+using SotoAyu.model;
 
 namespace SotoAyu.view
 {
     public partial class UCDasboardKasir : UserControl
     {
         MainForm mainForm;
+        private UCTransaksiKasir transaksiKasir;
+
         public UCDasboardKasir(MainForm form)
         {
             InitializeComponent();
             this.mainForm = form;
-            LoadMenu(new UCTransaksiKasir());
+            this.transaksiKasir = new UCTransaksiKasir();
+            LoadMenu(transaksiKasir);
         }
         public void LoadMenu(UserControl uc)
         {
@@ -58,8 +62,17 @@ namespace SotoAyu.view
 
         private void cuiButtonLaporan_Click(object sender, EventArgs e)
         {
-            highlightButton((cuiButton)sender);
-            LoadMenu(new UCRiwayatTransaksi());
+            if (transaksiKasir != null && transaksiKasir.memilikiOrder)
+            {
+                Notif notif = new Notif();
+                notif.setPesan("Terdapat transaksi yang belum diselesaikan");
+                notif.ShowDialog();
+            }
+            else
+            {
+                highlightButton((cuiButton)sender);
+                LoadMenu(new UCRiwayatTransaksi());
+            }
         }
     }
 }

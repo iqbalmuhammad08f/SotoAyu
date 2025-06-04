@@ -65,7 +65,7 @@
             // 
             // cuiPictureBoxGambar
             // 
-            cuiPictureBoxGambar.BackColor = Color.Gray;
+            cuiPictureBoxGambar.BackColor = Color.Transparent;
             cuiPictureBoxGambar.BackgroundImageLayout = ImageLayout.Zoom;
             cuiPictureBoxGambar.Content = null;
             cuiPictureBoxGambar.ImageTint = Color.White;

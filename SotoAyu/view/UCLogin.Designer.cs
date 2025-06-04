@@ -85,7 +85,7 @@
             cuiTextBoxUsername.PasswordChar = false;
             cuiTextBoxUsername.PlaceholderColor = SystemColors.InactiveCaption;
             cuiTextBoxUsername.PlaceholderText = "";
-            cuiTextBoxUsername.Rounding = new Padding(30);
+            cuiTextBoxUsername.Rounding = new Padding(25);
             cuiTextBoxUsername.Size = new Size(378, 52);
             cuiTextBoxUsername.TabIndex = 2;
             cuiTextBoxUsername.TextOffset = new Size(0, 0);
@@ -153,7 +153,7 @@
             cuiTextBoxPassword.PasswordChar = true;
             cuiTextBoxPassword.PlaceholderColor = SystemColors.WindowText;
             cuiTextBoxPassword.PlaceholderText = "";
-            cuiTextBoxPassword.Rounding = new Padding(30);
+            cuiTextBoxPassword.Rounding = new Padding(25);
             cuiTextBoxPassword.Size = new Size(326, 52);
             cuiTextBoxPassword.TabIndex = 5;
             cuiTextBoxPassword.TextOffset = new Size(0, 0);

@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing.Imaging.Effects;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
 using SotoAyu.model;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace SotoAyu.controller
 {
@@ -67,5 +69,69 @@ namespace SotoAyu.controller
                 }
             }
         }
+        public static List<Transaksi> GetAllTransaksis()
+        {
+            List<Transaksi> List_transaksis = new List<Transaksi>();
+            using (var conn = database.GetConnection())
+            {
+                conn.Open();
+                string query = "SELECT * FROM transaksi";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    using var reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        Transaksi transaksi = new Transaksi
+                        {
+                            id_transaksi = reader.GetInt32(0),
+                            Tanggal = reader.GetDateTime(1),
+                            Nama_operator = reader.GetInt32(2),
+                            Total_transaksi = reader.GetInt32(3),
+                            Metode_pembayaran = reader.GetString(4)
+                        };
+                        List_transaksis.Add(transaksi);
+                    }
+                }
+            }
+            return List_transaksis;
+        }
+        public static List<MenuOrder> InfoDetailTransaksi(int id)
+        {
+            var listmenuOrder = new List<MenuOrder>();
+
+            using (var conn = database.GetConnection())
+            {
+                conn.Open();
+                string query = "SELECT td.jumlah, m.id_menu, m.nama, m.harga FROM transaksi_detail td JOIN menu m ON td.id_menu = m.id_menu WHERE td.id_transaksi = @id";
+
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    using (var reader = cmd.ExecuteReader())
+                    {
+                        while (reader.Read())
+                        {
+                            var menu = new model.Menu
+                            {
+                                id_menu = reader.GetInt32(reader.GetOrdinal("id_menu")),
+                                Nama_menu = reader.GetString(reader.GetOrdinal("nama")),
+                                Harga_menu = reader.GetInt32(reader.GetOrdinal("harga"))
+                            };
+
+                            var menuOrder = new MenuOrder
+                            {
+                                menu = menu,
+                                qty = reader.GetInt32(reader.GetOrdinal("jumlah"))
+                            };
+
+                            listmenuOrder.Add(menuOrder);
+                        }
+                    }
+                }
+            }
+
+            return listmenuOrder;
+        }
+
     }
 }
