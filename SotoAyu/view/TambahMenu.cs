@@ -23,7 +23,7 @@ namespace SotoAyu.view
 
         private void cuiPictureBoxUpload_Click(object sender, EventArgs e)
         {
-            using(OpenFileDialog openFile = new OpenFileDialog())
+            using (OpenFileDialog openFile = new OpenFileDialog())
             {
                 openFile.Title = "Pilih gambar";
                 openFile.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
@@ -47,14 +47,14 @@ namespace SotoAyu.view
 
         public void setKategori(string kategori)
         {
-            cuiTextBoxKategori.Content = kategori;
+            cuiLabelKategori.Content = kategori;
         }
 
         private void cuiButtonAccept_Click(object sender, EventArgs e)
         {
             string nama = cuiTextBoxNama.Content;
             int harga;
-            string kategori = cuiTextBoxKategori.Content;
+            string kategori = cuiLabelKategori.Content;
             if (!int.TryParse(cuiTextBoxHarga.Content, out harga))
             {
                 Notif notif = new Notif();
@@ -72,5 +72,6 @@ namespace SotoAyu.view
                 this.Close();
             }
         }
+
     }
 }

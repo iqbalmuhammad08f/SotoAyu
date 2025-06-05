@@ -24,7 +24,7 @@ namespace SotoAyu.view
             int no = 1;
             foreach (var transaksi in list_transaksi)
             {
-                flowLayoutPanelListTransaksi.Controls.Add(new UCListTransaksi(no, transaksi.Tanggal, transaksi.Total_transaksi, transaksi.id_transaksi));
+                flowLayoutPanelListTransaksi.Controls.Add(new UCListTransaksi(no, transaksi.Tanggal, transaksi.Total_transaksi, transaksi.id_transaksi, transaksi.Nama_operator));
                 no++;
             }
         }

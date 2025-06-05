@@ -34,11 +34,12 @@
             cuiCalendarDatePicker2 = new CuoreUI.Controls.cuiCalendarDatePicker();
             cuiLabel2 = new CuoreUI.Controls.cuiLabel();
             flowLayoutPanelListTransaksi = new FlowLayoutPanel();
+            cuiButton2 = new CuoreUI.Controls.cuiButton();
+            cuiLabel5 = new CuoreUI.Controls.cuiLabel();
             cuiLabel4 = new CuoreUI.Controls.cuiLabel();
             cuiLabel3 = new CuoreUI.Controls.cuiLabel();
-            cuiLabel5 = new CuoreUI.Controls.cuiLabel();
             cuiLabel6 = new CuoreUI.Controls.cuiLabel();
-            cuiButton2 = new CuoreUI.Controls.cuiButton();
+            cuiLabel7 = new CuoreUI.Controls.cuiLabel();
             SuspendLayout();
             // 
             // cuiLabel1
@@ -123,62 +124,6 @@
             flowLayoutPanelListTransaksi.Size = new Size(901, 494);
             flowLayoutPanelListTransaksi.TabIndex = 32;
             // 
-            // cuiLabel4
-            // 
-            cuiLabel4.BackColor = Color.White;
-            cuiLabel4.Content = "Info";
-            cuiLabel4.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiLabel4.ForeColor = Color.FromArgb(75, 110, 2);
-            cuiLabel4.HorizontalAlignment = StringAlignment.Center;
-            cuiLabel4.Location = new Point(678, 207);
-            cuiLabel4.Margin = new Padding(4, 5, 4, 5);
-            cuiLabel4.Name = "cuiLabel4";
-            cuiLabel4.Size = new Size(208, 34);
-            cuiLabel4.TabIndex = 31;
-            cuiLabel4.VerticalAlignment = StringAlignment.Center;
-            // 
-            // cuiLabel3
-            // 
-            cuiLabel3.BackColor = Color.White;
-            cuiLabel3.Content = "Total";
-            cuiLabel3.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiLabel3.ForeColor = Color.FromArgb(75, 110, 2);
-            cuiLabel3.HorizontalAlignment = StringAlignment.Center;
-            cuiLabel3.Location = new Point(389, 207);
-            cuiLabel3.Margin = new Padding(4, 5, 4, 5);
-            cuiLabel3.Name = "cuiLabel3";
-            cuiLabel3.Size = new Size(281, 34);
-            cuiLabel3.TabIndex = 30;
-            cuiLabel3.VerticalAlignment = StringAlignment.Center;
-            // 
-            // cuiLabel5
-            // 
-            cuiLabel5.BackColor = Color.White;
-            cuiLabel5.Content = "Tanggal";
-            cuiLabel5.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiLabel5.ForeColor = Color.FromArgb(75, 110, 2);
-            cuiLabel5.HorizontalAlignment = StringAlignment.Center;
-            cuiLabel5.Location = new Point(100, 207);
-            cuiLabel5.Margin = new Padding(4, 5, 4, 5);
-            cuiLabel5.Name = "cuiLabel5";
-            cuiLabel5.Size = new Size(281, 34);
-            cuiLabel5.TabIndex = 29;
-            cuiLabel5.VerticalAlignment = StringAlignment.Center;
-            // 
-            // cuiLabel6
-            // 
-            cuiLabel6.BackColor = Color.White;
-            cuiLabel6.Content = "No";
-            cuiLabel6.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiLabel6.ForeColor = Color.FromArgb(75, 110, 2);
-            cuiLabel6.HorizontalAlignment = StringAlignment.Center;
-            cuiLabel6.Location = new Point(31, 207);
-            cuiLabel6.Margin = new Padding(4, 5, 4, 5);
-            cuiLabel6.Name = "cuiLabel6";
-            cuiLabel6.Size = new Size(61, 34);
-            cuiLabel6.TabIndex = 28;
-            cuiLabel6.VerticalAlignment = StringAlignment.Center;
-            // 
             // cuiButton2
             // 
             cuiButton2.BackColor = Color.Transparent;
@@ -218,17 +163,88 @@
             cuiButton2.TextAlignment = StringAlignment.Center;
             cuiButton2.TextOffset = new Point(0, 0);
             // 
+            // cuiLabel5
+            // 
+            cuiLabel5.BackColor = Color.White;
+            cuiLabel5.Content = "Nama\\ Kasir";
+            cuiLabel5.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel5.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabel5.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel5.Location = new Point(319, 209);
+            cuiLabel5.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel5.Name = "cuiLabel5";
+            cuiLabel5.Size = new Size(190, 34);
+            cuiLabel5.TabIndex = 37;
+            cuiLabel5.VerticalAlignment = StringAlignment.Center;
+            // 
+            // cuiLabel4
+            // 
+            cuiLabel4.BackColor = Color.White;
+            cuiLabel4.Content = "Info";
+            cuiLabel4.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel4.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabel4.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel4.Location = new Point(698, 209);
+            cuiLabel4.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel4.Name = "cuiLabel4";
+            cuiLabel4.Size = new Size(187, 34);
+            cuiLabel4.TabIndex = 36;
+            cuiLabel4.VerticalAlignment = StringAlignment.Center;
+            // 
+            // cuiLabel3
+            // 
+            cuiLabel3.BackColor = Color.White;
+            cuiLabel3.Content = "Total";
+            cuiLabel3.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel3.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabel3.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel3.Location = new Point(517, 209);
+            cuiLabel3.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel3.Name = "cuiLabel3";
+            cuiLabel3.Size = new Size(167, 34);
+            cuiLabel3.TabIndex = 35;
+            cuiLabel3.VerticalAlignment = StringAlignment.Center;
+            // 
+            // cuiLabel6
+            // 
+            cuiLabel6.BackColor = Color.White;
+            cuiLabel6.Content = "Tanggal";
+            cuiLabel6.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel6.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabel6.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel6.Location = new Point(99, 209);
+            cuiLabel6.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel6.Name = "cuiLabel6";
+            cuiLabel6.Size = new Size(212, 34);
+            cuiLabel6.TabIndex = 34;
+            cuiLabel6.VerticalAlignment = StringAlignment.Center;
+            // 
+            // cuiLabel7
+            // 
+            cuiLabel7.BackColor = Color.White;
+            cuiLabel7.Content = "No";
+            cuiLabel7.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel7.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabel7.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel7.Location = new Point(30, 209);
+            cuiLabel7.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel7.Name = "cuiLabel7";
+            cuiLabel7.Size = new Size(61, 34);
+            cuiLabel7.TabIndex = 33;
+            cuiLabel7.VerticalAlignment = StringAlignment.Center;
+            // 
             // UCTransaksiAdmin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            Controls.Add(flowLayoutPanelListTransaksi);
+            Controls.Add(cuiLabel5);
             Controls.Add(cuiLabel4);
             Controls.Add(cuiLabel3);
-            Controls.Add(cuiLabel5);
             Controls.Add(cuiLabel6);
+            Controls.Add(cuiLabel7);
+            Controls.Add(flowLayoutPanelListTransaksi);
             Controls.Add(cuiButton2);
             Controls.Add(cuiLabel2);
             Controls.Add(cuiCalendarDatePicker2);
@@ -247,10 +263,11 @@
         private CuoreUI.Controls.cuiCalendarDatePicker cuiCalendarDatePicker2;
         private CuoreUI.Controls.cuiLabel cuiLabel2;
         private FlowLayoutPanel flowLayoutPanelListTransaksi;
+        private CuoreUI.Controls.cuiButton cuiButton2;
+        private CuoreUI.Controls.cuiLabel cuiLabel5;
         private CuoreUI.Controls.cuiLabel cuiLabel4;
         private CuoreUI.Controls.cuiLabel cuiLabel3;
-        private CuoreUI.Controls.cuiLabel cuiLabel5;
         private CuoreUI.Controls.cuiLabel cuiLabel6;
-        private CuoreUI.Controls.cuiButton cuiButton2;
+        private CuoreUI.Controls.cuiLabel cuiLabel7;
     }
 }

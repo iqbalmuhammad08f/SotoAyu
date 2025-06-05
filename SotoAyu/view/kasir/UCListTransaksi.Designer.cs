@@ -32,6 +32,7 @@
             cuiLabelTanggal = new CuoreUI.Controls.cuiLabel();
             cuiLabelNo = new CuoreUI.Controls.cuiLabel();
             cuiButtonInfo = new CuoreUI.Controls.cuiButton();
+            cuiLabelNamaOperator = new CuoreUI.Controls.cuiLabel();
             SuspendLayout();
             // 
             // cuiLabelTotal
@@ -41,10 +42,10 @@
             cuiLabelTotal.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabelTotal.ForeColor = Color.FromArgb(75, 110, 2);
             cuiLabelTotal.HorizontalAlignment = StringAlignment.Center;
-            cuiLabelTotal.Location = new Point(369, 7);
+            cuiLabelTotal.Location = new Point(504, 7);
             cuiLabelTotal.Margin = new Padding(4, 5, 4, 5);
             cuiLabelTotal.Name = "cuiLabelTotal";
-            cuiLabelTotal.Size = new Size(281, 34);
+            cuiLabelTotal.Size = new Size(167, 34);
             cuiLabelTotal.TabIndex = 28;
             cuiLabelTotal.VerticalAlignment = StringAlignment.Center;
             // 
@@ -58,7 +59,7 @@
             cuiLabelTanggal.Location = new Point(80, 7);
             cuiLabelTanggal.Margin = new Padding(4, 5, 4, 5);
             cuiLabelTanggal.Name = "cuiLabelTanggal";
-            cuiLabelTanggal.Size = new Size(281, 34);
+            cuiLabelTanggal.Size = new Size(212, 34);
             cuiLabelTanggal.TabIndex = 27;
             cuiLabelTanggal.VerticalAlignment = StringAlignment.Center;
             // 
@@ -97,7 +98,7 @@
             cuiButtonInfo.ImageAutoCenter = true;
             cuiButtonInfo.ImageExpand = new Point(0, 0);
             cuiButtonInfo.ImageOffset = new Point(0, 0);
-            cuiButtonInfo.Location = new Point(657, 7);
+            cuiButtonInfo.Location = new Point(678, 7);
             cuiButtonInfo.Name = "cuiButtonInfo";
             cuiButtonInfo.NormalBackground = Color.FromArgb(75, 110, 2);
             cuiButtonInfo.NormalForeColor = Color.White;
@@ -109,17 +110,32 @@
             cuiButtonInfo.PressedImageTint = Color.White;
             cuiButtonInfo.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             cuiButtonInfo.Rounding = new Padding(10);
-            cuiButtonInfo.Size = new Size(205, 34);
+            cuiButtonInfo.Size = new Size(187, 34);
             cuiButtonInfo.TabIndex = 29;
             cuiButtonInfo.TextAlignment = StringAlignment.Center;
             cuiButtonInfo.TextOffset = new Point(0, 0);
             cuiButtonInfo.Click += cuiButtonInfo_Click;
+            // 
+            // cuiLabelNamaOperator
+            // 
+            cuiLabelNamaOperator.BackColor = Color.White;
+            cuiLabelNamaOperator.Content = "Tanggal";
+            cuiLabelNamaOperator.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabelNamaOperator.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabelNamaOperator.HorizontalAlignment = StringAlignment.Center;
+            cuiLabelNamaOperator.Location = new Point(300, 7);
+            cuiLabelNamaOperator.Margin = new Padding(4, 5, 4, 5);
+            cuiLabelNamaOperator.Name = "cuiLabelNamaOperator";
+            cuiLabelNamaOperator.Size = new Size(212, 34);
+            cuiLabelNamaOperator.TabIndex = 30;
+            cuiLabelNamaOperator.VerticalAlignment = StringAlignment.Center;
             // 
             // UCListTransaksi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(cuiLabelNamaOperator);
             Controls.Add(cuiButtonInfo);
             Controls.Add(cuiLabelTotal);
             Controls.Add(cuiLabelTanggal);
@@ -136,5 +152,6 @@
         private CuoreUI.Controls.cuiLabel cuiLabelTanggal;
         private CuoreUI.Controls.cuiLabel cuiLabelNo;
         private CuoreUI.Controls.cuiButton cuiButtonInfo;
+        private CuoreUI.Controls.cuiLabel cuiLabelNamaOperator;
     }
 }

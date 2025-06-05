@@ -37,6 +37,8 @@
             cuiLabel4 = new CuoreUI.Controls.cuiLabel();
             cuiLabelMetode = new CuoreUI.Controls.cuiLabel();
             cuiLabelTanggal = new CuoreUI.Controls.cuiLabel();
+            cuiLabel5 = new CuoreUI.Controls.cuiLabel();
+            cuiLabelKasir = new CuoreUI.Controls.cuiLabel();
             SuspendLayout();
             // 
             // cuiFormRounder1
@@ -120,7 +122,7 @@
             cuiLabel3.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabel3.ForeColor = Color.FromArgb(4, 32, 33);
             cuiLabel3.HorizontalAlignment = StringAlignment.Near;
-            cuiLabel3.Location = new Point(13, 296);
+            cuiLabel3.Location = new Point(13, 321);
             cuiLabel3.Margin = new Padding(4, 5, 4, 5);
             cuiLabel3.Name = "cuiLabel3";
             cuiLabel3.Size = new Size(174, 27);
@@ -134,7 +136,7 @@
             cuiLabel4.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabel4.ForeColor = Color.FromArgb(4, 32, 33);
             cuiLabel4.HorizontalAlignment = StringAlignment.Near;
-            cuiLabel4.Location = new Point(13, 333);
+            cuiLabel4.Location = new Point(13, 358);
             cuiLabel4.Margin = new Padding(4, 5, 4, 5);
             cuiLabel4.Name = "cuiLabel4";
             cuiLabel4.Size = new Size(187, 27);
@@ -148,7 +150,7 @@
             cuiLabelMetode.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabelMetode.ForeColor = Color.FromArgb(4, 32, 33);
             cuiLabelMetode.HorizontalAlignment = StringAlignment.Far;
-            cuiLabelMetode.Location = new Point(195, 296);
+            cuiLabelMetode.Location = new Point(195, 321);
             cuiLabelMetode.Margin = new Padding(4, 5, 4, 5);
             cuiLabelMetode.Name = "cuiLabelMetode";
             cuiLabelMetode.Size = new Size(149, 27);
@@ -162,12 +164,40 @@
             cuiLabelTanggal.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabelTanggal.ForeColor = Color.FromArgb(4, 32, 33);
             cuiLabelTanggal.HorizontalAlignment = StringAlignment.Far;
-            cuiLabelTanggal.Location = new Point(195, 333);
+            cuiLabelTanggal.Location = new Point(195, 358);
             cuiLabelTanggal.Margin = new Padding(4, 5, 4, 5);
             cuiLabelTanggal.Name = "cuiLabelTanggal";
             cuiLabelTanggal.Size = new Size(149, 27);
             cuiLabelTanggal.TabIndex = 24;
             cuiLabelTanggal.VerticalAlignment = StringAlignment.Near;
+            // 
+            // cuiLabel5
+            // 
+            cuiLabel5.BackColor = Color.Transparent;
+            cuiLabel5.Content = "Kasir";
+            cuiLabel5.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel5.ForeColor = Color.FromArgb(4, 32, 33);
+            cuiLabel5.HorizontalAlignment = StringAlignment.Near;
+            cuiLabel5.Location = new Point(13, 284);
+            cuiLabel5.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel5.Name = "cuiLabel5";
+            cuiLabel5.Size = new Size(174, 27);
+            cuiLabel5.TabIndex = 25;
+            cuiLabel5.VerticalAlignment = StringAlignment.Near;
+            // 
+            // cuiLabelKasir
+            // 
+            cuiLabelKasir.BackColor = Color.Transparent;
+            cuiLabelKasir.Content = "Nama\\ Kasir";
+            cuiLabelKasir.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabelKasir.ForeColor = Color.FromArgb(4, 32, 33);
+            cuiLabelKasir.HorizontalAlignment = StringAlignment.Far;
+            cuiLabelKasir.Location = new Point(195, 284);
+            cuiLabelKasir.Margin = new Padding(4, 5, 4, 5);
+            cuiLabelKasir.Name = "cuiLabelKasir";
+            cuiLabelKasir.Size = new Size(149, 27);
+            cuiLabelKasir.TabIndex = 26;
+            cuiLabelKasir.VerticalAlignment = StringAlignment.Near;
             // 
             // Payment
             // 
@@ -176,6 +206,8 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
             ClientSize = new Size(357, 516);
+            Controls.Add(cuiLabelKasir);
+            Controls.Add(cuiLabel5);
             Controls.Add(cuiLabelTanggal);
             Controls.Add(cuiLabelMetode);
             Controls.Add(cuiLabel4);
@@ -200,5 +232,7 @@
         private CuoreUI.Controls.cuiLabel cuiLabelTotal;
         private CuoreUI.Controls.cuiLabel cuiLabelTanggal;
         private CuoreUI.Controls.cuiLabel cuiLabelMetode;
+        private CuoreUI.Controls.cuiLabel cuiLabelKasir;
+        private CuoreUI.Controls.cuiLabel cuiLabel5;
     }
 }

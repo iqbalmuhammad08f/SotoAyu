@@ -14,7 +14,7 @@ namespace SotoAyu.view
     {
         int id;
         string tanggal;
-        public UCListTransaksi(int no, DateTime tanggal, int total, int id)
+        public UCListTransaksi(int no, DateTime tanggal, int total, int id, string kasir)
         {
             InitializeComponent();
             this.id = id;
@@ -22,6 +22,7 @@ namespace SotoAyu.view
             cuiLabelNo.Content = no.ToString();
             cuiLabelTanggal.Content = this.tanggal;
             cuiLabelTotal.Content = $"Rp.{total.ToString()}";
+            cuiLabelNamaOperator.Content = kasir;
         }
 
         private void cuiButtonInfo_Click(object sender, EventArgs e)

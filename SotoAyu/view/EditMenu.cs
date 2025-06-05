@@ -22,7 +22,7 @@ namespace SotoAyu.view
             this.parentmenu = parentmenu;
             this.menu = menu;
             cuiTextBoxNama.Content = menu.Nama_menu;
-            cuiTextBoxKategori.Content = menu.Kategori_Menu;
+            cuiLabelKategori.Content = menu.Kategori_Menu;
             using (MemoryStream ms = new MemoryStream(menu.Gambar_menu))
             {
                 cuiPictureBoxUpload.BackgroundImage = Image.FromStream(ms);

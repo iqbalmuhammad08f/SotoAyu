@@ -33,10 +33,10 @@
             cuiButtonExit = new CuoreUI.Controls.cuiButton();
             cuiPictureBoxUpload = new CuoreUI.Controls.cuiPictureBox();
             cuiButtonAccept = new CuoreUI.Controls.cuiButton();
-            cuiTextBoxKategori = new CuoreUI.Controls.cuiTextBox();
             cuiLabel1 = new CuoreUI.Controls.cuiLabel();
             cuiTextBoxHarga = new CuoreUI.Controls.cuiTextBox();
             cuiTextBoxNama = new CuoreUI.Controls.cuiTextBox();
+            cuiLabelKategori = new CuoreUI.Controls.cuiLabel();
             SuspendLayout();
             // 
             // cuiFormRounder1
@@ -90,7 +90,7 @@
             cuiPictureBoxUpload.BackgroundImageLayout = ImageLayout.Zoom;
             cuiPictureBoxUpload.Content = null;
             cuiPictureBoxUpload.ImageTint = Color.White;
-            cuiPictureBoxUpload.Location = new Point(154, 66);
+            cuiPictureBoxUpload.Location = new Point(154, 135);
             cuiPictureBoxUpload.Margin = new Padding(4, 5, 4, 5);
             cuiPictureBoxUpload.Name = "cuiPictureBoxUpload";
             cuiPictureBoxUpload.OutlineThickness = 1F;
@@ -140,35 +140,6 @@
             cuiButtonAccept.TextOffset = new Point(0, 0);
             cuiButtonAccept.Click += cuiButtonAccept_Click;
             // 
-            // cuiTextBoxKategori
-            // 
-            cuiTextBoxKategori.BackgroundColor = Color.FromArgb(232, 232, 232);
-            cuiTextBoxKategori.BorderColor = Color.FromArgb(128, 128, 128, 128);
-            cuiTextBoxKategori.Content = "kategori";
-            cuiTextBoxKategori.Enabled = false;
-            cuiTextBoxKategori.FocusBackgroundColor = Color.White;
-            cuiTextBoxKategori.FocusBorderColor = Color.White;
-            cuiTextBoxKategori.FocusImageTint = Color.White;
-            cuiTextBoxKategori.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiTextBoxKategori.ForeColor = Color.Black;
-            cuiTextBoxKategori.Image = null;
-            cuiTextBoxKategori.ImageExpand = new Point(0, 0);
-            cuiTextBoxKategori.ImageOffset = new Point(0, 0);
-            cuiTextBoxKategori.Location = new Point(54, 355);
-            cuiTextBoxKategori.Margin = new Padding(4);
-            cuiTextBoxKategori.Multiline = false;
-            cuiTextBoxKategori.Name = "cuiTextBoxKategori";
-            cuiTextBoxKategori.NormalImageTint = Color.White;
-            cuiTextBoxKategori.Padding = new Padding(22, 7, 22, 0);
-            cuiTextBoxKategori.PasswordChar = false;
-            cuiTextBoxKategori.PlaceholderColor = SystemColors.WindowText;
-            cuiTextBoxKategori.PlaceholderText = "";
-            cuiTextBoxKategori.Rounding = new Padding(8);
-            cuiTextBoxKategori.Size = new Size(354, 37);
-            cuiTextBoxKategori.TabIndex = 27;
-            cuiTextBoxKategori.TextOffset = new Size(0, 0);
-            cuiTextBoxKategori.UnderlinedStyle = true;
-            // 
             // cuiLabel1
             // 
             cuiLabel1.BackColor = Color.Transparent;
@@ -196,7 +167,7 @@
             cuiTextBoxHarga.Image = null;
             cuiTextBoxHarga.ImageExpand = new Point(0, 0);
             cuiTextBoxHarga.ImageOffset = new Point(0, 0);
-            cuiTextBoxHarga.Location = new Point(54, 289);
+            cuiTextBoxHarga.Location = new Point(54, 358);
             cuiTextBoxHarga.Margin = new Padding(4);
             cuiTextBoxHarga.Multiline = false;
             cuiTextBoxHarga.Name = "cuiTextBoxHarga";
@@ -224,7 +195,7 @@
             cuiTextBoxNama.Image = null;
             cuiTextBoxNama.ImageExpand = new Point(0, 0);
             cuiTextBoxNama.ImageOffset = new Point(0, 0);
-            cuiTextBoxNama.Location = new Point(54, 224);
+            cuiTextBoxNama.Location = new Point(54, 293);
             cuiTextBoxNama.Margin = new Padding(4);
             cuiTextBoxNama.Multiline = false;
             cuiTextBoxNama.Name = "cuiTextBoxNama";
@@ -239,15 +210,29 @@
             cuiTextBoxNama.TextOffset = new Size(0, 0);
             cuiTextBoxNama.UnderlinedStyle = true;
             // 
+            // cuiLabelKategori
+            // 
+            cuiLabelKategori.BackColor = Color.Transparent;
+            cuiLabelKategori.Content = "Kategori";
+            cuiLabelKategori.Font = new Font("Archivo Black", 19.7999973F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabelKategori.ForeColor = Color.FromArgb(35, 48, 8);
+            cuiLabelKategori.HorizontalAlignment = StringAlignment.Center;
+            cuiLabelKategori.Location = new Point(91, 58);
+            cuiLabelKategori.Margin = new Padding(4, 5, 4, 5);
+            cuiLabelKategori.Name = "cuiLabelKategori";
+            cuiLabelKategori.Size = new Size(271, 45);
+            cuiLabelKategori.TabIndex = 32;
+            cuiLabelKategori.VerticalAlignment = StringAlignment.Near;
+            // 
             // TambahMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(452, 484);
+            Controls.Add(cuiLabelKategori);
             Controls.Add(cuiTextBoxNama);
             Controls.Add(cuiTextBoxHarga);
             Controls.Add(cuiButtonAccept);
-            Controls.Add(cuiTextBoxKategori);
             Controls.Add(cuiLabel1);
             Controls.Add(cuiPictureBoxUpload);
             Controls.Add(cuiButtonExit);
@@ -263,10 +248,10 @@
         private CuoreUI.Controls.cuiButton cuiButtonExit;
         private CuoreUI.Controls.cuiPictureBox cuiPictureBoxUpload;
         private CuoreUI.Controls.cuiButton cuiButtonAccept;
-        private CuoreUI.Controls.cuiTextBox cuiTextBoxKategori;
         private CuoreUI.Controls.cuiLabel cuiLabel1;
         private CuoreUI.Controls.cuiTextBox cuiTextBox2;
         private CuoreUI.Controls.cuiTextBox cuiTextBoxHarga;
         private CuoreUI.Controls.cuiTextBox cuiTextBoxNama;
+        private CuoreUI.Controls.cuiLabel cuiLabelKategori;
     }
 }

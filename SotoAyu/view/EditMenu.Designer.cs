@@ -32,11 +32,11 @@
             cuiTextBoxNama = new CuoreUI.Controls.cuiTextBox();
             cuiTextBoxHarga = new CuoreUI.Controls.cuiTextBox();
             cuiButtonOk = new CuoreUI.Controls.cuiButton();
-            cuiTextBoxKategori = new CuoreUI.Controls.cuiTextBox();
             cuiLabel1 = new CuoreUI.Controls.cuiLabel();
             cuiPictureBoxUpload = new CuoreUI.Controls.cuiPictureBox();
             cuiButtonExit = new CuoreUI.Controls.cuiButton();
             cuiButtonHapus = new CuoreUI.Controls.cuiButton();
+            cuiLabelKategori = new CuoreUI.Controls.cuiLabel();
             SuspendLayout();
             // 
             // cuiTextBoxNama
@@ -53,7 +53,7 @@
             cuiTextBoxNama.Image = null;
             cuiTextBoxNama.ImageExpand = new Point(0, 0);
             cuiTextBoxNama.ImageOffset = new Point(0, 0);
-            cuiTextBoxNama.Location = new Point(46, 209);
+            cuiTextBoxNama.Location = new Point(46, 273);
             cuiTextBoxNama.Margin = new Padding(4);
             cuiTextBoxNama.Multiline = false;
             cuiTextBoxNama.Name = "cuiTextBoxNama";
@@ -81,7 +81,7 @@
             cuiTextBoxHarga.Image = null;
             cuiTextBoxHarga.ImageExpand = new Point(0, 0);
             cuiTextBoxHarga.ImageOffset = new Point(0, 0);
-            cuiTextBoxHarga.Location = new Point(46, 274);
+            cuiTextBoxHarga.Location = new Point(46, 338);
             cuiTextBoxHarga.Margin = new Padding(4);
             cuiTextBoxHarga.Multiline = false;
             cuiTextBoxHarga.Name = "cuiTextBoxHarga";
@@ -135,35 +135,6 @@
             cuiButtonOk.TextOffset = new Point(0, 0);
             cuiButtonOk.Click += cuiButtonOk_Click;
             // 
-            // cuiTextBoxKategori
-            // 
-            cuiTextBoxKategori.BackgroundColor = Color.FromArgb(232, 232, 232);
-            cuiTextBoxKategori.BorderColor = Color.FromArgb(128, 128, 128, 128);
-            cuiTextBoxKategori.Content = "kategori";
-            cuiTextBoxKategori.Enabled = false;
-            cuiTextBoxKategori.FocusBackgroundColor = Color.White;
-            cuiTextBoxKategori.FocusBorderColor = Color.White;
-            cuiTextBoxKategori.FocusImageTint = Color.White;
-            cuiTextBoxKategori.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiTextBoxKategori.ForeColor = Color.Black;
-            cuiTextBoxKategori.Image = null;
-            cuiTextBoxKategori.ImageExpand = new Point(0, 0);
-            cuiTextBoxKategori.ImageOffset = new Point(0, 0);
-            cuiTextBoxKategori.Location = new Point(46, 340);
-            cuiTextBoxKategori.Margin = new Padding(4);
-            cuiTextBoxKategori.Multiline = false;
-            cuiTextBoxKategori.Name = "cuiTextBoxKategori";
-            cuiTextBoxKategori.NormalImageTint = Color.White;
-            cuiTextBoxKategori.Padding = new Padding(22, 7, 22, 0);
-            cuiTextBoxKategori.PasswordChar = false;
-            cuiTextBoxKategori.PlaceholderColor = SystemColors.WindowText;
-            cuiTextBoxKategori.PlaceholderText = "";
-            cuiTextBoxKategori.Rounding = new Padding(8);
-            cuiTextBoxKategori.Size = new Size(354, 37);
-            cuiTextBoxKategori.TabIndex = 35;
-            cuiTextBoxKategori.TextOffset = new Size(0, 0);
-            cuiTextBoxKategori.UnderlinedStyle = true;
-            // 
             // cuiLabel1
             // 
             cuiLabel1.BackColor = Color.Transparent;
@@ -184,7 +155,7 @@
             cuiPictureBoxUpload.BackgroundImageLayout = ImageLayout.Zoom;
             cuiPictureBoxUpload.Content = null;
             cuiPictureBoxUpload.ImageTint = Color.White;
-            cuiPictureBoxUpload.Location = new Point(146, 51);
+            cuiPictureBoxUpload.Location = new Point(146, 128);
             cuiPictureBoxUpload.Margin = new Padding(4, 5, 4, 5);
             cuiPictureBoxUpload.Name = "cuiPictureBoxUpload";
             cuiPictureBoxUpload.OutlineThickness = 1F;
@@ -271,16 +242,30 @@
             cuiButtonHapus.TextOffset = new Point(0, 0);
             cuiButtonHapus.Click += cuiButtonHapus_Click;
             // 
+            // cuiLabelKategori
+            // 
+            cuiLabelKategori.BackColor = Color.Transparent;
+            cuiLabelKategori.Content = "Kategori";
+            cuiLabelKategori.Font = new Font("Archivo Black", 19.7999973F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabelKategori.ForeColor = Color.FromArgb(35, 48, 8);
+            cuiLabelKategori.HorizontalAlignment = StringAlignment.Center;
+            cuiLabelKategori.Location = new Point(83, 43);
+            cuiLabelKategori.Margin = new Padding(4, 5, 4, 5);
+            cuiLabelKategori.Name = "cuiLabelKategori";
+            cuiLabelKategori.Size = new Size(271, 45);
+            cuiLabelKategori.TabIndex = 40;
+            cuiLabelKategori.VerticalAlignment = StringAlignment.Near;
+            // 
             // EditMenu
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(452, 484);
+            Controls.Add(cuiLabelKategori);
             Controls.Add(cuiButtonHapus);
             Controls.Add(cuiTextBoxNama);
             Controls.Add(cuiTextBoxHarga);
             Controls.Add(cuiButtonOk);
-            Controls.Add(cuiTextBoxKategori);
             Controls.Add(cuiLabel1);
             Controls.Add(cuiPictureBoxUpload);
             Controls.Add(cuiButtonExit);
@@ -296,10 +281,10 @@
         private CuoreUI.Controls.cuiTextBox cuiTextBoxNama;
         private CuoreUI.Controls.cuiTextBox cuiTextBoxHarga;
         private CuoreUI.Controls.cuiButton cuiButtonOk;
-        private CuoreUI.Controls.cuiTextBox cuiTextBoxKategori;
         private CuoreUI.Controls.cuiLabel cuiLabel1;
         private CuoreUI.Controls.cuiPictureBox cuiPictureBoxUpload;
         private CuoreUI.Controls.cuiButton cuiButtonExit;
         private CuoreUI.Controls.cuiButton cuiButtonHapus;
+        private CuoreUI.Controls.cuiLabel cuiLabelKategori;
     }
 }

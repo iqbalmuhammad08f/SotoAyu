@@ -48,7 +48,7 @@ namespace SotoAyu.controller
             using (var conn = database.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT * FROM transaksi WHERE id_transaksi = @id";
+                string query = "SELECT t.id_transaksi,t.tanggal,k.nama,t.total,t.metode_pembayaran FROM transaksi t JOIN karyawan k ON t.nama_operator = k.id_karyawan  WHERE id_transaksi = @id";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     cmd.Parameters.AddWithValue("@id", id);
@@ -59,7 +59,7 @@ namespace SotoAyu.controller
                         {
                             id_transaksi = reader.GetInt32(0),
                             Tanggal = reader.GetDateTime(1),
-                            Nama_operator = reader.GetInt32(2),
+                            Nama_operator = reader.GetString(2),
                             Total_transaksi = reader.GetInt32(3),
                             Metode_pembayaran = reader.GetString(4)
                         };
@@ -75,7 +75,7 @@ namespace SotoAyu.controller
             using (var conn = database.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT * FROM transaksi";
+                string query = "SELECT t.id_transaksi,t.tanggal,k.nama,t.total,t.metode_pembayaran FROM transaksi t JOIN karyawan k ON t.nama_operator = k.id_karyawan";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     using var reader = cmd.ExecuteReader();
@@ -85,7 +85,7 @@ namespace SotoAyu.controller
                         {
                             id_transaksi = reader.GetInt32(0),
                             Tanggal = reader.GetDateTime(1),
-                            Nama_operator = reader.GetInt32(2),
+                            Nama_operator = reader.GetString(2),
                             Total_transaksi = reader.GetInt32(3),
                             Metode_pembayaran = reader.GetString(4)
                         };
