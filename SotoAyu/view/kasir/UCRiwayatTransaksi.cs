@@ -20,7 +20,7 @@ namespace SotoAyu.view
         }
         private void LoadlistTransaksi()
         {
-            var list_transaksi = TransaksiController.GetAllTransaksis();
+            var list_transaksi = TransaksiController.GetNowTransaksi();
             int no = 1;
             foreach (var transaksi in list_transaksi)
             {

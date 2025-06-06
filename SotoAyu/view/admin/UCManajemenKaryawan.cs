@@ -37,14 +37,16 @@ namespace SotoAyu.view
             form.StartPosition = FormStartPosition.Manual;
             form.Location = new Point(centerX, centerY);
         }
-        private void loadKaryawan()
+        public void loadKaryawan()
         {
             flowLayoutPanelKaryawan.Controls.Clear();
             var list_karyawan = KaryawanController.GetKaryawans();
             var filter = list_karyawan.Where(a => a.status == true);
+            int no = 1;
             foreach (var karyawan in filter)
             {
-                flowLayoutPanelKaryawan.Controls.Add(new UCListKaryawan(karyawan));
+                flowLayoutPanelKaryawan.Controls.Add(new UCListKaryawan(karyawan,no,this));
+                no++;
             }
         }
         private void loadKaryawan(string search)
@@ -52,9 +54,11 @@ namespace SotoAyu.view
             flowLayoutPanelKaryawan.Controls.Clear();
             var list_karyawan = KaryawanController.GetKaryawans();
             var filter = list_karyawan.Where(a => a.nama.Contains(search));
+            int no = 1;
             foreach (var karyawan in filter)
             {
-                flowLayoutPanelKaryawan.Controls.Add(new UCListKaryawan(karyawan));
+                flowLayoutPanelKaryawan.Controls.Add(new UCListKaryawan(karyawan, no,this));
+                no++;
             }
 
         }

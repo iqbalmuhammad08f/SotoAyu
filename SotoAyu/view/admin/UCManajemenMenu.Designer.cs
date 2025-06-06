@@ -145,7 +145,7 @@
             // flowLayoutLoadMakanan
             // 
             flowLayoutLoadMakanan.AutoScroll = true;
-            flowLayoutLoadMakanan.BackColor = SystemColors.ControlLight;
+            flowLayoutLoadMakanan.BackColor = Color.WhiteSmoke;
             flowLayoutLoadMakanan.Location = new Point(19, 147);
             flowLayoutLoadMakanan.Name = "flowLayoutLoadMakanan";
             flowLayoutLoadMakanan.Size = new Size(888, 352);
@@ -154,7 +154,7 @@
             // flowLayoutLoadMinuman
             // 
             flowLayoutLoadMinuman.AutoScroll = true;
-            flowLayoutLoadMinuman.BackColor = SystemColors.ControlLight;
+            flowLayoutLoadMinuman.BackColor = Color.WhiteSmoke;
             flowLayoutLoadMinuman.Location = new Point(19, 548);
             flowLayoutLoadMinuman.Name = "flowLayoutLoadMinuman";
             flowLayoutLoadMinuman.Size = new Size(888, 213);
@@ -164,6 +164,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            BackColor = Color.WhiteSmoke;
             Controls.Add(flowLayoutLoadMinuman);
             Controls.Add(flowLayoutLoadMakanan);
             Controls.Add(cuiLabel2);

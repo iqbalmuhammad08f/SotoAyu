@@ -83,7 +83,7 @@ namespace SotoAyu.view
         public void loadTotal()
         {
             float total = listmenuOrder.Sum(mo => mo.menu.Harga_menu * mo.qty);
-            cuiLabelTotal.Content = $"Rp. {total.ToString()}";
+            cuiLabelTotal.Content = $"Rp " + total.ToString("N0");
         }
 
         private void cuiButton1_Click(object sender, EventArgs e)
@@ -174,5 +174,6 @@ namespace SotoAyu.view
             form.StartPosition = FormStartPosition.Manual;
             form.Location = new Point(centerX, centerY);
         }
+
     }
 }

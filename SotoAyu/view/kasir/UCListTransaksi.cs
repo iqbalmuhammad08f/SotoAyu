@@ -21,7 +21,7 @@ namespace SotoAyu.view
             this.tanggal = tanggal.ToString("dd-MM-yyyy HH:mm");
             cuiLabelNo.Content = no.ToString();
             cuiLabelTanggal.Content = this.tanggal;
-            cuiLabelTotal.Content = $"Rp.{total.ToString()}";
+            cuiLabelTotal.Content = $"Rp " + total.ToString("N0");
             cuiLabelNamaOperator.Content = kasir;
         }
 

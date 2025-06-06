@@ -24,7 +24,7 @@ namespace SotoAyu.view
         private void loadPayment()
         {
             var transaksi = TransaksiController.GetTransaksis(id);
-            cuiLabelTotal.Content = $"Rp. {transaksi.Total_transaksi.ToString()}";
+            cuiLabelTotal.Content = $"Rp " + transaksi.Total_transaksi.ToString("N0");
             cuiLabelMetode.Content = transaksi.Metode_pembayaran;
             cuiLabelTanggal.Content = transaksi.Tanggal.ToString("dd-MM-yyyy HH:mm");
             cuiLabelKasir.Content = transaksi.Nama_operator;

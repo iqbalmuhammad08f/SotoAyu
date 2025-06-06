@@ -53,6 +53,39 @@ namespace SotoAyu.controller
                 return list_karyawan;
             }
         }
+        public static Karyawan GetOneKaryawan(int id)
+        {
+            using(var conn = database.GetConnection())
+            {
+                conn.Open();
+                string query = "SELECT * FROM karyawan WHERE id_karyawan = @id";
+                using(var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@id", id);
+                    using var reader = cmd.ExecuteReader();
+                    return new Karyawan
+                    {
+                        id_karywan = reader.GetInt32(0),
+                        nama = reader.GetString(1),
+                        role = reader.GetString(2),
+                        status = reader.GetBoolean(3)
+                    };
+                }
+            }
+        }
+        public static void UpdateKaryawan(int id,string role)
+        {
+            using (var conn = database.GetConnection())
+            {
+
+                conn.Open();
+                string query = "UPDATE karyawan SET jabatan = @role WHERE id_karyawan = @id";
+                using var cmd = new NpgsqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@id", id);
+                cmd.Parameters.AddWithValue("@role", role);
+                cmd.ExecuteNonQuery();
+            }
+        }
         public static void DelKaryawan(int id)
         {
             using (var conn = database.GetConnection())

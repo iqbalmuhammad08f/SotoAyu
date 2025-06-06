@@ -75,7 +75,61 @@ namespace SotoAyu.controller
             using (var conn = database.GetConnection())
             {
                 conn.Open();
-                string query = "SELECT t.id_transaksi,t.tanggal,k.nama,t.total,t.metode_pembayaran FROM transaksi t JOIN karyawan k ON t.nama_operator = k.id_karyawan";
+                string query = "SELECT t.id_transaksi,t.tanggal,k.nama,t.total,t.metode_pembayaran FROM transaksi t JOIN karyawan k ON t.nama_operator = k.id_karyawan ORDER BY t.tanggal DESC";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    using var reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        Transaksi transaksi = new Transaksi
+                        {
+                            id_transaksi = reader.GetInt32(0),
+                            Tanggal = reader.GetDateTime(1),
+                            Nama_operator = reader.GetString(2),
+                            Total_transaksi = reader.GetInt32(3),
+                            Metode_pembayaran = reader.GetString(4)
+                        };
+                        List_transaksis.Add(transaksi);
+                    }
+                }
+            }
+            return List_transaksis;
+        }
+        public static List<Transaksi> GetFromToTransaksi(DateTime from, DateTime to)
+        {
+            List<Transaksi> List_transaksis = new List<Transaksi>();
+            using (var conn = database.GetConnection())
+            {
+                conn.Open();
+                string query = "SELECT t.id_transaksi,t.tanggal,k.nama,t.total,t.metode_pembayaran FROM transaksi t JOIN karyawan k ON t.nama_operator = k.id_karyawan WHERE t.tanggal BETWEEN @from AND @to ORDER BY t.tanggal ASC";
+                using (var cmd = new NpgsqlCommand(query, conn))
+                {
+                    cmd.Parameters.AddWithValue("@from", from);
+                    cmd.Parameters.AddWithValue("@to", to.Date.AddDays(1));
+                    using var reader = cmd.ExecuteReader();
+                    while (reader.Read())
+                    {
+                        Transaksi transaksi = new Transaksi
+                        {
+                            id_transaksi = reader.GetInt32(0),
+                            Tanggal = reader.GetDateTime(1),
+                            Nama_operator = reader.GetString(2),
+                            Total_transaksi = reader.GetInt32(3),
+                            Metode_pembayaran = reader.GetString(4)
+                        };
+                        List_transaksis.Add(transaksi);
+                    }
+                }
+            }
+            return List_transaksis;
+        }
+        public static List<Transaksi> GetNowTransaksi()
+        {
+            List<Transaksi> List_transaksis = new List<Transaksi>();
+            using (var conn = database.GetConnection())
+            {
+                conn.Open();
+                string query = "SELECT t.id_transaksi,t.tanggal,k.nama,t.total,t.metode_pembayaran FROM transaksi t JOIN karyawan k ON t.nama_operator = k.id_karyawan WHERE DATE(t.tanggal) = CURRENT_DATE";
                 using (var cmd = new NpgsqlCommand(query, conn))
                 {
                     using var reader = cmd.ExecuteReader();

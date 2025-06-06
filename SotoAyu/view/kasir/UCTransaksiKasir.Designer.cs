@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCTransaksiKasir));
             cuiLabel1 = new CuoreUI.Controls.cuiLabel();
             cuiLabel2 = new CuoreUI.Controls.cuiLabel();
-            flowLayoutPanelMakanan = new FlowLayoutPanel();
             flowLayoutPanelMinuman = new FlowLayoutPanel();
             cuiButtonTunai = new CuoreUI.Controls.cuiButton();
             cuiLabel3 = new CuoreUI.Controls.cuiLabel();
@@ -42,6 +41,8 @@
             cuiLabelTotal = new CuoreUI.Controls.cuiLabel();
             cuiComboBoxKaryawan = new CuoreUI.Controls.cuiComboBox();
             cuiLabel6 = new CuoreUI.Controls.cuiLabel();
+            flowLayoutPanelMakanan = new FlowLayoutPanel();
+            cuiButton1 = new CuoreUI.Controls.cuiButton();
             SuspendLayout();
             // 
             // cuiLabel1
@@ -51,7 +52,7 @@
             cuiLabel1.Font = new Font("Archivo Black", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabel1.ForeColor = Color.FromArgb(75, 110, 2);
             cuiLabel1.HorizontalAlignment = StringAlignment.Center;
-            cuiLabel1.Location = new Point(63, 58);
+            cuiLabel1.Location = new Point(45, 58);
             cuiLabel1.Margin = new Padding(4, 5, 4, 5);
             cuiLabel1.Name = "cuiLabel1";
             cuiLabel1.Size = new Size(175, 49);
@@ -72,14 +73,6 @@
             cuiLabel2.TabIndex = 21;
             cuiLabel2.VerticalAlignment = StringAlignment.Near;
             // 
-            // flowLayoutPanelMakanan
-            // 
-            flowLayoutPanelMakanan.AutoScroll = true;
-            flowLayoutPanelMakanan.Location = new Point(34, 96);
-            flowLayoutPanelMakanan.Name = "flowLayoutPanelMakanan";
-            flowLayoutPanelMakanan.Size = new Size(590, 389);
-            flowLayoutPanelMakanan.TabIndex = 22;
-            // 
             // flowLayoutPanelMinuman
             // 
             flowLayoutPanelMinuman.Location = new Point(34, 558);
@@ -89,7 +82,7 @@
             // 
             // cuiButtonTunai
             // 
-            cuiButtonTunai.BackColor = Color.Transparent;
+            cuiButtonTunai.BackColor = Color.White;
             cuiButtonTunai.BackgroundImageLayout = ImageLayout.Zoom;
             cuiButtonTunai.CheckButton = false;
             cuiButtonTunai.Checked = false;
@@ -129,7 +122,7 @@
             // 
             // cuiLabel3
             // 
-            cuiLabel3.BackColor = Color.Transparent;
+            cuiLabel3.BackColor = Color.White;
             cuiLabel3.Content = "Order\\ Menu";
             cuiLabel3.Font = new Font("Archivo Black", 13.7999992F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabel3.ForeColor = Color.FromArgb(75, 110, 2);
@@ -143,7 +136,7 @@
             // 
             // cuiLabel4
             // 
-            cuiLabel4.BackColor = Color.Transparent;
+            cuiLabel4.BackColor = Color.White;
             cuiLabel4.Content = "Total\\ :";
             cuiLabel4.Font = new Font("Archivo Black", 13.7999992F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabel4.ForeColor = Color.FromArgb(75, 110, 2);
@@ -157,7 +150,7 @@
             // 
             // cuiButtonQris
             // 
-            cuiButtonQris.BackColor = Color.Transparent;
+            cuiButtonQris.BackColor = Color.White;
             cuiButtonQris.CheckButton = false;
             cuiButtonQris.Checked = false;
             cuiButtonQris.CheckedBackground = Color.FromArgb(255, 106, 0);
@@ -196,7 +189,7 @@
             // 
             // cuiButtonOrder
             // 
-            cuiButtonOrder.BackColor = Color.Transparent;
+            cuiButtonOrder.BackColor = Color.White;
             cuiButtonOrder.CheckButton = false;
             cuiButtonOrder.Checked = false;
             cuiButtonOrder.CheckedBackground = Color.FromArgb(255, 106, 0);
@@ -242,8 +235,8 @@
             // 
             // cuiLabelTotal
             // 
-            cuiLabelTotal.BackColor = Color.Transparent;
-            cuiLabelTotal.Content = "Rp\\.\\.\\.\\.\\.";
+            cuiLabelTotal.BackColor = Color.White;
+            cuiLabelTotal.Content = "Rp\\ 0";
             cuiLabelTotal.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabelTotal.ForeColor = Color.FromArgb(75, 110, 2);
             cuiLabelTotal.HorizontalAlignment = StringAlignment.Center;
@@ -288,19 +281,66 @@
             cuiLabel6.Font = new Font("Archivo Black", 13.7999992F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabel6.ForeColor = Color.FromArgb(75, 110, 2);
             cuiLabel6.HorizontalAlignment = StringAlignment.Center;
-            cuiLabel6.Location = new Point(198, 5);
+            cuiLabel6.Location = new Point(198, 11);
             cuiLabel6.Margin = new Padding(4, 5, 4, 5);
             cuiLabel6.Name = "cuiLabel6";
             cuiLabel6.Size = new Size(175, 41);
             cuiLabel6.TabIndex = 32;
             cuiLabel6.VerticalAlignment = StringAlignment.Near;
             // 
+            // flowLayoutPanelMakanan
+            // 
+            flowLayoutPanelMakanan.Location = new Point(34, 104);
+            flowLayoutPanelMakanan.Name = "flowLayoutPanelMakanan";
+            flowLayoutPanelMakanan.Size = new Size(590, 389);
+            flowLayoutPanelMakanan.TabIndex = 24;
+            // 
+            // cuiButton1
+            // 
+            cuiButton1.BackColor = Color.Transparent;
+            cuiButton1.CheckButton = false;
+            cuiButton1.Checked = false;
+            cuiButton1.CheckedBackground = Color.FromArgb(255, 106, 0);
+            cuiButton1.CheckedForeColor = Color.White;
+            cuiButton1.CheckedImageTint = Color.White;
+            cuiButton1.CheckedOutline = Color.FromArgb(255, 106, 0);
+            cuiButton1.Content = "";
+            cuiButton1.DialogResult = DialogResult.None;
+            cuiButton1.Enabled = false;
+            cuiButton1.Font = new Font("Microsoft Sans Serif", 9.75F);
+            cuiButton1.ForeColor = Color.Black;
+            cuiButton1.HoverBackground = Color.White;
+            cuiButton1.HoveredImageTint = Color.White;
+            cuiButton1.HoverForeColor = Color.Black;
+            cuiButton1.HoverOutline = Color.FromArgb(32, 128, 128, 128);
+            cuiButton1.Image = null;
+            cuiButton1.ImageAutoCenter = true;
+            cuiButton1.ImageExpand = new Point(0, 0);
+            cuiButton1.ImageOffset = new Point(0, 0);
+            cuiButton1.Location = new Point(630, 141);
+            cuiButton1.Name = "cuiButton1";
+            cuiButton1.NormalBackground = Color.White;
+            cuiButton1.NormalForeColor = Color.Black;
+            cuiButton1.NormalImageTint = Color.White;
+            cuiButton1.NormalOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton1.OutlineThickness = 1F;
+            cuiButton1.PressedBackground = Color.WhiteSmoke;
+            cuiButton1.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuiButton1.PressedImageTint = Color.White;
+            cuiButton1.PressedOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButton1.Rounding = new Padding(10);
+            cuiButton1.Size = new Size(359, 615);
+            cuiButton1.TabIndex = 33;
+            cuiButton1.TextAlignment = StringAlignment.Center;
+            cuiButton1.TextOffset = new Point(0, 0);
+            // 
             // UCTransaksiKasir
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
+            BackColor = Color.WhiteSmoke;
             BackgroundImageLayout = ImageLayout.Stretch;
+            Controls.Add(flowLayoutPanelMakanan);
             Controls.Add(cuiLabel6);
             Controls.Add(cuiComboBoxKaryawan);
             Controls.Add(cuiLabelTotal);
@@ -311,9 +351,9 @@
             Controls.Add(cuiLabel3);
             Controls.Add(cuiButtonTunai);
             Controls.Add(flowLayoutPanelMinuman);
-            Controls.Add(flowLayoutPanelMakanan);
             Controls.Add(cuiLabel2);
             Controls.Add(cuiLabel1);
+            Controls.Add(cuiButton1);
             DoubleBuffered = true;
             Name = "UCTransaksiKasir";
             Size = new Size(976, 777);
@@ -323,7 +363,6 @@
         #endregion
         private CuoreUI.Controls.cuiLabel cuiLabel1;
         private CuoreUI.Controls.cuiLabel cuiLabel2;
-        private FlowLayoutPanel flowLayoutPanelMakanan;
         private FlowLayoutPanel flowLayoutPanelMinuman;
         private CuoreUI.Controls.cuiButton cuiButtonTunai;
         private CuoreUI.Controls.cuiLabel cuiLabel3;
@@ -334,5 +373,7 @@
         private CuoreUI.Controls.cuiLabel cuiLabelTotal;
         private CuoreUI.Controls.cuiComboBox cuiComboBoxKaryawan;
         private CuoreUI.Controls.cuiLabel cuiLabel6;
+        private FlowLayoutPanel flowLayoutPanelMakanan;
+        private CuoreUI.Controls.cuiButton cuiButton1;
     }
 }

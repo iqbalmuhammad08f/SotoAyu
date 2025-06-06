@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cuiTextBoxSearch = new CuoreUI.Controls.cuiTextBox();
-            cuiButtonCreate = new CuoreUI.Controls.cuiButton();
             cuiButton2 = new CuoreUI.Controls.cuiButton();
             cuiLabel1 = new CuoreUI.Controls.cuiLabel();
             cuiLabel2 = new CuoreUI.Controls.cuiLabel();
@@ -37,75 +35,8 @@
             cuiLabel4 = new CuoreUI.Controls.cuiLabel();
             flowLayoutPanelListTransaksi = new FlowLayoutPanel();
             cuiLabel5 = new CuoreUI.Controls.cuiLabel();
+            cuiLabel6 = new CuoreUI.Controls.cuiLabel();
             SuspendLayout();
-            // 
-            // cuiTextBoxSearch
-            // 
-            cuiTextBoxSearch.BackColor = Color.Transparent;
-            cuiTextBoxSearch.BackgroundColor = Color.White;
-            cuiTextBoxSearch.BorderColor = Color.FromArgb(128, 128, 128, 128);
-            cuiTextBoxSearch.Content = "";
-            cuiTextBoxSearch.FocusBackgroundColor = Color.FromArgb(35, 48, 8);
-            cuiTextBoxSearch.FocusBorderColor = Color.Transparent;
-            cuiTextBoxSearch.FocusImageTint = Color.White;
-            cuiTextBoxSearch.Font = new Font("Alike", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiTextBoxSearch.ForeColor = Color.White;
-            cuiTextBoxSearch.Image = null;
-            cuiTextBoxSearch.ImageExpand = new Point(0, 0);
-            cuiTextBoxSearch.ImageOffset = new Point(0, 0);
-            cuiTextBoxSearch.Location = new Point(31, 49);
-            cuiTextBoxSearch.Margin = new Padding(4);
-            cuiTextBoxSearch.Multiline = false;
-            cuiTextBoxSearch.Name = "cuiTextBoxSearch";
-            cuiTextBoxSearch.NormalImageTint = Color.Transparent;
-            cuiTextBoxSearch.Padding = new Padding(26, 14, 26, 0);
-            cuiTextBoxSearch.PasswordChar = false;
-            cuiTextBoxSearch.PlaceholderColor = Color.FromArgb(75, 110, 2);
-            cuiTextBoxSearch.PlaceholderText = "search here";
-            cuiTextBoxSearch.Rounding = new Padding(15);
-            cuiTextBoxSearch.Size = new Size(340, 55);
-            cuiTextBoxSearch.TabIndex = 18;
-            cuiTextBoxSearch.TextOffset = new Size(0, 0);
-            cuiTextBoxSearch.UnderlinedStyle = true;
-            // 
-            // cuiButtonCreate
-            // 
-            cuiButtonCreate.BackColor = Color.Transparent;
-            cuiButtonCreate.BackgroundImage = Properties.Resources.Search;
-            cuiButtonCreate.CheckButton = false;
-            cuiButtonCreate.Checked = false;
-            cuiButtonCreate.CheckedBackground = Color.FromArgb(255, 106, 0);
-            cuiButtonCreate.CheckedForeColor = Color.White;
-            cuiButtonCreate.CheckedImageTint = Color.White;
-            cuiButtonCreate.CheckedOutline = Color.FromArgb(255, 106, 0);
-            cuiButtonCreate.Content = "";
-            cuiButtonCreate.DialogResult = DialogResult.None;
-            cuiButtonCreate.Font = new Font("Archivo Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiButtonCreate.ForeColor = Color.White;
-            cuiButtonCreate.HoverBackground = Color.FromArgb(67, 119, 30);
-            cuiButtonCreate.HoveredImageTint = Color.White;
-            cuiButtonCreate.HoverForeColor = Color.Black;
-            cuiButtonCreate.HoverOutline = Color.FromArgb(32, 128, 128, 128);
-            cuiButtonCreate.Image = Properties.Resources.Search;
-            cuiButtonCreate.ImageAutoCenter = true;
-            cuiButtonCreate.ImageExpand = new Point(0, 0);
-            cuiButtonCreate.ImageOffset = new Point(0, 0);
-            cuiButtonCreate.Location = new Point(387, 49);
-            cuiButtonCreate.Name = "cuiButtonCreate";
-            cuiButtonCreate.NormalBackground = Color.FromArgb(67, 119, 30);
-            cuiButtonCreate.NormalForeColor = Color.White;
-            cuiButtonCreate.NormalImageTint = Color.White;
-            cuiButtonCreate.NormalOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButtonCreate.OutlineThickness = 1F;
-            cuiButtonCreate.PressedBackground = Color.WhiteSmoke;
-            cuiButtonCreate.PressedForeColor = Color.FromArgb(32, 32, 32);
-            cuiButtonCreate.PressedImageTint = Color.White;
-            cuiButtonCreate.PressedOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButtonCreate.Rounding = new Padding(15);
-            cuiButtonCreate.Size = new Size(64, 54);
-            cuiButtonCreate.TabIndex = 20;
-            cuiButtonCreate.TextAlignment = StringAlignment.Center;
-            cuiButtonCreate.TextOffset = new Point(0, 0);
             // 
             // cuiButton2
             // 
@@ -225,10 +156,25 @@
             cuiLabel5.TabIndex = 27;
             cuiLabel5.VerticalAlignment = StringAlignment.Center;
             // 
+            // cuiLabel6
+            // 
+            cuiLabel6.BackColor = Color.Transparent;
+            cuiLabel6.Content = "Riwayat\\ Transaksi\\ Hari\\ ini";
+            cuiLabel6.Font = new Font("Archivo Black", 19.7999973F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel6.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabel6.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel6.Location = new Point(31, 23);
+            cuiLabel6.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel6.Name = "cuiLabel6";
+            cuiLabel6.Size = new Size(416, 114);
+            cuiLabel6.TabIndex = 28;
+            cuiLabel6.VerticalAlignment = StringAlignment.Near;
+            // 
             // UCRiwayatTransaksi
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(cuiLabel6);
             Controls.Add(cuiLabel5);
             Controls.Add(flowLayoutPanelListTransaksi);
             Controls.Add(cuiLabel4);
@@ -236,16 +182,12 @@
             Controls.Add(cuiLabel2);
             Controls.Add(cuiLabel1);
             Controls.Add(cuiButton2);
-            Controls.Add(cuiButtonCreate);
-            Controls.Add(cuiTextBoxSearch);
             Name = "UCRiwayatTransaksi";
             Size = new Size(976, 777);
             ResumeLayout(false);
         }
 
         #endregion
-        private CuoreUI.Controls.cuiTextBox cuiTextBoxSearch;
-        private CuoreUI.Controls.cuiButton cuiButtonCreate;
         private CuoreUI.Controls.cuiButton cuiButton2;
         private CuoreUI.Controls.cuiLabel cuiLabel1;
         private CuoreUI.Controls.cuiLabel cuiLabel2;
@@ -253,5 +195,6 @@
         private CuoreUI.Controls.cuiLabel cuiLabel4;
         private FlowLayoutPanel flowLayoutPanelListTransaksi;
         private CuoreUI.Controls.cuiLabel cuiLabel5;
+        private CuoreUI.Controls.cuiLabel cuiLabel6;
     }
 }

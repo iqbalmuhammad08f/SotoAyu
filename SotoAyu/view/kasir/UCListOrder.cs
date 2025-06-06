@@ -23,7 +23,7 @@ namespace SotoAyu.view
             this.transaksiKasir = transaksiKasir;
 
             cuiLabelNama.Content = menuOrder.menu.Nama_menu;
-            cuiLabelHarga.Content = $"Rp.{menuOrder.menu.Harga_menu.ToString()}";
+            cuiLabelHarga.Content = $"Rp " + menuOrder.menu.Harga_menu.ToString("N0");
             cuiLabelJumlah.Content = menuOrder.qty.ToString();
         }
 

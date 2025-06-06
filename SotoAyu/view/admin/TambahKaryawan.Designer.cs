@@ -41,14 +41,14 @@
             // cuiLabel1
             // 
             cuiLabel1.BackColor = Color.Transparent;
-            cuiLabel1.Content = "Informasi\\ Akun";
+            cuiLabel1.Content = "Informasi\\ Karyawan";
             cuiLabel1.Font = new Font("Archivo Black", 19.7999973F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabel1.ForeColor = Color.FromArgb(35, 48, 8);
             cuiLabel1.HorizontalAlignment = StringAlignment.Center;
-            cuiLabel1.Location = new Point(190, 3);
+            cuiLabel1.Location = new Point(178, 3);
             cuiLabel1.Margin = new Padding(4, 5, 4, 5);
             cuiLabel1.Name = "cuiLabel1";
-            cuiLabel1.Size = new Size(188, 90);
+            cuiLabel1.Size = new Size(215, 90);
             cuiLabel1.TabIndex = 16;
             cuiLabel1.VerticalAlignment = StringAlignment.Near;
             // 

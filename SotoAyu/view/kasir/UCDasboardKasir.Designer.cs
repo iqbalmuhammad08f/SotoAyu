@@ -172,6 +172,7 @@
             // 
             // panelContainerKasir
             // 
+            panelContainerKasir.BackColor = Color.WhiteSmoke;
             panelContainerKasir.Dock = DockStyle.Right;
             panelContainerKasir.Location = new Point(246, 0);
             panelContainerKasir.Name = "panelContainerKasir";

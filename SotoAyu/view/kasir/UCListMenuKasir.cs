@@ -25,7 +25,7 @@ namespace SotoAyu.view
                 cuiPictureBoxGambar.BackgroundImage = Image.FromStream(ms);
             }
             cuiLabelNama.Content = menu.Nama_menu;
-            cuiLabelHarga.Content = $"Rp.{menu.Harga_menu.ToString()}";
+            cuiLabelHarga.Content = $"Rp " + menu.Harga_menu.ToString("N0");
         }
 
         private void cuiButtonAdd_Click(object sender, EventArgs e)

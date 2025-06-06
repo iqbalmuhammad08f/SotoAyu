@@ -39,7 +39,7 @@ namespace SotoAyu.view
 
             foreach (var order in detailOrder)
             {
-                string teks = $"{order.menu.Nama_menu} {order.menu.Harga_menu} x {order.qty}";
+                string teks = $"{order.menu.Nama_menu} {$"Rp " + order.menu.Harga_menu.ToString("N0")} x {order.qty}";
                 cuiLabel lbl = new cuiLabel();
                 lbl.BackColor = Color.Transparent;
                 lbl.Content = teks;

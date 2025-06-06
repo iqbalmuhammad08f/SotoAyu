@@ -24,12 +24,13 @@ namespace SotoAyu.view
             cuiPictureBoxGambar.Click += Menu_Click;
             cuiLabelNama.Click += Menu_Click;
             cuiLabelHarga.Click += Menu_Click;
+            cuiButton1.Click += Menu_Click;
             using (MemoryStream ms = new MemoryStream(menu.Gambar_menu))
             {
                 cuiPictureBoxGambar.BackgroundImage = Image.FromStream(ms);
             }
             cuiLabelNama.Content = menu.Nama_menu;
-            cuiLabelHarga.Content = $"Rp.{menu.Harga_menu.ToString()}";
+            cuiLabelHarga.Content = $"Rp " + menu.Harga_menu.ToString("N0");
         }
 
         private void Menu_Click(object sender, EventArgs e)

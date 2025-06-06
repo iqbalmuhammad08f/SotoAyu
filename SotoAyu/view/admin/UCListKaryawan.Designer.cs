@@ -28,138 +28,155 @@
         /// </summary>
         private void InitializeComponent()
         {
-            cuiButton2 = new CuoreUI.Controls.cuiButton();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UCListKaryawan));
             cuiLabelNama = new CuoreUI.Controls.cuiLabel();
             cuiLabelRole = new CuoreUI.Controls.cuiLabel();
-            cuiButtonAccept = new CuoreUI.Controls.cuiButton();
+            cuiLabelNo = new CuoreUI.Controls.cuiLabel();
+            cuiButtonEdit = new CuoreUI.Controls.cuiButton();
+            cuiButtonHapus = new CuoreUI.Controls.cuiButton();
             SuspendLayout();
-            // 
-            // cuiButton2
-            // 
-            cuiButton2.BackColor = Color.Transparent;
-            cuiButton2.CheckButton = false;
-            cuiButton2.Checked = false;
-            cuiButton2.CheckedBackground = Color.FromArgb(255, 106, 0);
-            cuiButton2.CheckedForeColor = Color.White;
-            cuiButton2.CheckedImageTint = Color.White;
-            cuiButton2.CheckedOutline = Color.FromArgb(255, 106, 0);
-            cuiButton2.Content = "";
-            cuiButton2.DialogResult = DialogResult.None;
-            cuiButton2.Enabled = false;
-            cuiButton2.Font = new Font("Archivo Black", 19.7999973F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiButton2.ForeColor = Color.White;
-            cuiButton2.HoverBackground = Color.White;
-            cuiButton2.HoveredImageTint = Color.White;
-            cuiButton2.HoverForeColor = Color.Black;
-            cuiButton2.HoverOutline = Color.FromArgb(32, 128, 128, 128);
-            cuiButton2.Image = null;
-            cuiButton2.ImageAutoCenter = true;
-            cuiButton2.ImageExpand = new Point(0, 0);
-            cuiButton2.ImageOffset = new Point(0, 0);
-            cuiButton2.Location = new Point(0, 0);
-            cuiButton2.Name = "cuiButton2";
-            cuiButton2.NormalBackground = Color.FromArgb(108, 156, 8);
-            cuiButton2.NormalForeColor = Color.White;
-            cuiButton2.NormalImageTint = Color.White;
-            cuiButton2.NormalOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButton2.OutlineThickness = 1F;
-            cuiButton2.PressedBackground = Color.WhiteSmoke;
-            cuiButton2.PressedForeColor = Color.FromArgb(32, 32, 32);
-            cuiButton2.PressedImageTint = Color.White;
-            cuiButton2.PressedOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButton2.Rounding = new Padding(20);
-            cuiButton2.Size = new Size(625, 65);
-            cuiButton2.TabIndex = 20;
-            cuiButton2.TextAlignment = StringAlignment.Center;
-            cuiButton2.TextOffset = new Point(0, 0);
             // 
             // cuiLabelNama
             // 
-            cuiLabelNama.BackColor = Color.FromArgb(108, 156, 8);
+            cuiLabelNama.BackColor = Color.Transparent;
             cuiLabelNama.Content = "Nama";
-            cuiLabelNama.Font = new Font("Alike", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiLabelNama.ForeColor = Color.White;
+            cuiLabelNama.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabelNama.ForeColor = Color.FromArgb(75, 110, 2);
             cuiLabelNama.HorizontalAlignment = StringAlignment.Center;
-            cuiLabelNama.Location = new Point(19, 5);
+            cuiLabelNama.Location = new Point(71, 16);
             cuiLabelNama.Margin = new Padding(4, 5, 4, 5);
             cuiLabelNama.Name = "cuiLabelNama";
-            cuiLabelNama.Size = new Size(245, 55);
-            cuiLabelNama.TabIndex = 21;
+            cuiLabelNama.Size = new Size(190, 34);
+            cuiLabelNama.TabIndex = 45;
             cuiLabelNama.VerticalAlignment = StringAlignment.Center;
             // 
             // cuiLabelRole
             // 
-            cuiLabelRole.BackColor = Color.FromArgb(108, 156, 8);
+            cuiLabelRole.BackColor = Color.Transparent;
             cuiLabelRole.Content = "Role";
-            cuiLabelRole.Font = new Font("Alike", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiLabelRole.ForeColor = Color.White;
+            cuiLabelRole.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabelRole.ForeColor = Color.FromArgb(75, 110, 2);
             cuiLabelRole.HorizontalAlignment = StringAlignment.Center;
-            cuiLabelRole.Location = new Point(363, 5);
+            cuiLabelRole.Location = new Point(279, 16);
             cuiLabelRole.Margin = new Padding(4, 5, 4, 5);
             cuiLabelRole.Name = "cuiLabelRole";
-            cuiLabelRole.Size = new Size(245, 55);
-            cuiLabelRole.TabIndex = 22;
+            cuiLabelRole.Size = new Size(187, 34);
+            cuiLabelRole.TabIndex = 44;
             cuiLabelRole.VerticalAlignment = StringAlignment.Center;
             // 
-            // cuiButtonAccept
+            // cuiLabelNo
             // 
-            cuiButtonAccept.BackColor = Color.Transparent;
-            cuiButtonAccept.CheckButton = false;
-            cuiButtonAccept.Checked = false;
-            cuiButtonAccept.CheckedBackground = Color.FromArgb(255, 106, 0);
-            cuiButtonAccept.CheckedForeColor = Color.White;
-            cuiButtonAccept.CheckedImageTint = Color.White;
-            cuiButtonAccept.CheckedOutline = Color.FromArgb(255, 106, 0);
-            cuiButtonAccept.Content = "Hapus";
-            cuiButtonAccept.DialogResult = DialogResult.None;
-            cuiButtonAccept.Dock = DockStyle.Right;
-            cuiButtonAccept.Font = new Font("Archivo Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            cuiButtonAccept.ForeColor = Color.White;
-            cuiButtonAccept.HoverBackground = Color.FromArgb(192, 0, 0);
-            cuiButtonAccept.HoveredImageTint = Color.White;
-            cuiButtonAccept.HoverForeColor = Color.White;
-            cuiButtonAccept.HoverOutline = Color.FromArgb(32, 128, 128, 128);
-            cuiButtonAccept.Image = null;
-            cuiButtonAccept.ImageAutoCenter = true;
-            cuiButtonAccept.ImageExpand = new Point(0, 0);
-            cuiButtonAccept.ImageOffset = new Point(0, 0);
-            cuiButtonAccept.Location = new Point(631, 0);
-            cuiButtonAccept.Name = "cuiButtonAccept";
-            cuiButtonAccept.NormalBackground = Color.FromArgb(192, 0, 0);
-            cuiButtonAccept.NormalForeColor = Color.White;
-            cuiButtonAccept.NormalImageTint = Color.White;
-            cuiButtonAccept.NormalOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButtonAccept.OutlineThickness = 1F;
-            cuiButtonAccept.PressedBackground = Color.WhiteSmoke;
-            cuiButtonAccept.PressedForeColor = Color.FromArgb(32, 32, 32);
-            cuiButtonAccept.PressedImageTint = Color.White;
-            cuiButtonAccept.PressedOutline = Color.FromArgb(64, 128, 128, 128);
-            cuiButtonAccept.Rounding = new Padding(25);
-            cuiButtonAccept.Size = new Size(153, 65);
-            cuiButtonAccept.TabIndex = 23;
-            cuiButtonAccept.TextAlignment = StringAlignment.Center;
-            cuiButtonAccept.TextOffset = new Point(0, 0);
-            cuiButtonAccept.Click += cuiButtonAccept_Click;
+            cuiLabelNo.BackColor = Color.Transparent;
+            cuiLabelNo.Content = "No";
+            cuiLabelNo.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabelNo.ForeColor = Color.FromArgb(75, 110, 2);
+            cuiLabelNo.HorizontalAlignment = StringAlignment.Center;
+            cuiLabelNo.Location = new Point(4, 16);
+            cuiLabelNo.Margin = new Padding(4, 5, 4, 5);
+            cuiLabelNo.Name = "cuiLabelNo";
+            cuiLabelNo.Size = new Size(61, 34);
+            cuiLabelNo.TabIndex = 43;
+            cuiLabelNo.VerticalAlignment = StringAlignment.Center;
+            // 
+            // cuiButtonEdit
+            // 
+            cuiButtonEdit.BackColor = Color.Transparent;
+            cuiButtonEdit.CheckButton = false;
+            cuiButtonEdit.Checked = false;
+            cuiButtonEdit.CheckedBackground = Color.FromArgb(255, 106, 0);
+            cuiButtonEdit.CheckedForeColor = Color.White;
+            cuiButtonEdit.CheckedImageTint = Color.White;
+            cuiButtonEdit.CheckedOutline = Color.FromArgb(255, 106, 0);
+            cuiButtonEdit.Content = "";
+            cuiButtonEdit.DialogResult = DialogResult.None;
+            cuiButtonEdit.Font = new Font("Archivo Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiButtonEdit.ForeColor = Color.White;
+            cuiButtonEdit.HoverBackground = Color.FromArgb(75, 110, 2);
+            cuiButtonEdit.HoveredImageTint = Color.White;
+            cuiButtonEdit.HoverForeColor = Color.White;
+            cuiButtonEdit.HoverOutline = Color.FromArgb(32, 128, 128, 128);
+            cuiButtonEdit.Image = (Image)resources.GetObject("cuiButtonEdit.Image");
+            cuiButtonEdit.ImageAutoCenter = true;
+            cuiButtonEdit.ImageExpand = new Point(0, 0);
+            cuiButtonEdit.ImageOffset = new Point(0, 0);
+            cuiButtonEdit.Location = new Point(487, 16);
+            cuiButtonEdit.Name = "cuiButtonEdit";
+            cuiButtonEdit.NormalBackground = Color.FromArgb(75, 110, 2);
+            cuiButtonEdit.NormalForeColor = Color.White;
+            cuiButtonEdit.NormalImageTint = Color.White;
+            cuiButtonEdit.NormalOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButtonEdit.OutlineThickness = 1F;
+            cuiButtonEdit.PressedBackground = Color.WhiteSmoke;
+            cuiButtonEdit.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuiButtonEdit.PressedImageTint = Color.White;
+            cuiButtonEdit.PressedOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButtonEdit.Rounding = new Padding(10);
+            cuiButtonEdit.Size = new Size(150, 34);
+            cuiButtonEdit.TabIndex = 46;
+            cuiButtonEdit.TextAlignment = StringAlignment.Center;
+            cuiButtonEdit.TextOffset = new Point(0, 0);
+            cuiButtonEdit.Click += cuiButtonEdit_Click;
+            // 
+            // cuiButtonHapus
+            // 
+            cuiButtonHapus.BackColor = Color.Transparent;
+            cuiButtonHapus.CheckButton = false;
+            cuiButtonHapus.Checked = false;
+            cuiButtonHapus.CheckedBackground = Color.FromArgb(255, 106, 0);
+            cuiButtonHapus.CheckedForeColor = Color.White;
+            cuiButtonHapus.CheckedImageTint = Color.White;
+            cuiButtonHapus.CheckedOutline = Color.FromArgb(255, 106, 0);
+            cuiButtonHapus.Content = "";
+            cuiButtonHapus.DialogResult = DialogResult.None;
+            cuiButtonHapus.Font = new Font("Archivo Black", 16.2F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiButtonHapus.ForeColor = Color.White;
+            cuiButtonHapus.HoverBackground = Color.FromArgb(231, 0, 0);
+            cuiButtonHapus.HoveredImageTint = Color.White;
+            cuiButtonHapus.HoverForeColor = Color.White;
+            cuiButtonHapus.HoverOutline = Color.FromArgb(32, 128, 128, 128);
+            cuiButtonHapus.Image = (Image)resources.GetObject("cuiButtonHapus.Image");
+            cuiButtonHapus.ImageAutoCenter = true;
+            cuiButtonHapus.ImageExpand = new Point(0, 0);
+            cuiButtonHapus.ImageOffset = new Point(0, 0);
+            cuiButtonHapus.Location = new Point(653, 16);
+            cuiButtonHapus.Name = "cuiButtonHapus";
+            cuiButtonHapus.NormalBackground = Color.FromArgb(231, 0, 0);
+            cuiButtonHapus.NormalForeColor = Color.White;
+            cuiButtonHapus.NormalImageTint = Color.White;
+            cuiButtonHapus.NormalOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButtonHapus.OutlineThickness = 1F;
+            cuiButtonHapus.PressedBackground = Color.WhiteSmoke;
+            cuiButtonHapus.PressedForeColor = Color.FromArgb(32, 32, 32);
+            cuiButtonHapus.PressedImageTint = Color.White;
+            cuiButtonHapus.PressedOutline = Color.FromArgb(64, 128, 128, 128);
+            cuiButtonHapus.Rounding = new Padding(10);
+            cuiButtonHapus.Size = new Size(121, 34);
+            cuiButtonHapus.TabIndex = 47;
+            cuiButtonHapus.TextAlignment = StringAlignment.Center;
+            cuiButtonHapus.TextOffset = new Point(0, 0);
+            cuiButtonHapus.Click += cuiButtonHapus_Click;
             // 
             // UCListKaryawan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            Controls.Add(cuiButtonAccept);
-            Controls.Add(cuiLabelRole);
+            Controls.Add(cuiButtonHapus);
+            Controls.Add(cuiButtonEdit);
             Controls.Add(cuiLabelNama);
-            Controls.Add(cuiButton2);
-            Margin = new Padding(3, 3, 3, 10);
+            Controls.Add(cuiLabelRole);
+            Controls.Add(cuiLabelNo);
+            Margin = new Padding(0);
             Name = "UCListKaryawan";
-            Size = new Size(784, 65);
+            Size = new Size(794, 65);
             ResumeLayout(false);
         }
 
         #endregion
 
-        private CuoreUI.Controls.cuiButton cuiButton2;
         private CuoreUI.Controls.cuiLabel cuiLabelNama;
         private CuoreUI.Controls.cuiLabel cuiLabelRole;
-        private CuoreUI.Controls.cuiButton cuiButtonAccept;
+        private CuoreUI.Controls.cuiLabel cuiLabelNo;
+        private CuoreUI.Controls.cuiButton cuiButtonEdit;
+        private CuoreUI.Controls.cuiButton cuiButtonHapus;
     }
 }

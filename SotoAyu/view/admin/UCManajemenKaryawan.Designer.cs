@@ -32,10 +32,13 @@
             cuiTextBoxSearch = new CuoreUI.Controls.cuiTextBox();
             cuiButtonTambahKaryawan = new CuoreUI.Controls.cuiButton();
             cuiButtonCreate = new CuoreUI.Controls.cuiButton();
-            label2 = new Label();
-            label1 = new Label();
             cuiButton2 = new CuoreUI.Controls.cuiButton();
             flowLayoutPanelKaryawan = new FlowLayoutPanel();
+            cuiLabel5 = new CuoreUI.Controls.cuiLabel();
+            cuiLabel4 = new CuoreUI.Controls.cuiLabel();
+            cuiLabel3 = new CuoreUI.Controls.cuiLabel();
+            cuiLabel6 = new CuoreUI.Controls.cuiLabel();
+            cuiLabel7 = new CuoreUI.Controls.cuiLabel();
             SuspendLayout();
             // 
             // cuiButton1
@@ -185,30 +188,6 @@
             cuiButtonCreate.TextOffset = new Point(0, 0);
             cuiButtonCreate.Click += cuiButtonCreate_Click;
             // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.FromArgb(108, 156, 8);
-            label2.Font = new Font("Alike", 16.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.White;
-            label2.Location = new Point(508, 230);
-            label2.Name = "label2";
-            label2.Size = new Size(70, 36);
-            label2.TabIndex = 21;
-            label2.Text = "Role";
-            // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.FromArgb(108, 156, 8);
-            label1.Font = new Font("Alike", 16.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.White;
-            label1.Location = new Point(164, 230);
-            label1.Name = "label1";
-            label1.Size = new Size(84, 36);
-            label1.TabIndex = 20;
-            label1.Text = "Nama";
-            // 
             // cuiButton2
             // 
             cuiButton2.BackColor = Color.Transparent;
@@ -231,7 +210,7 @@
             cuiButton2.ImageAutoCenter = true;
             cuiButton2.ImageExpand = new Point(0, 0);
             cuiButton2.ImageOffset = new Point(0, 0);
-            cuiButton2.Location = new Point(61, 224);
+            cuiButton2.Location = new Point(44, 224);
             cuiButton2.Name = "cuiButton2";
             cuiButton2.NormalBackground = Color.FromArgb(108, 156, 8);
             cuiButton2.NormalForeColor = Color.White;
@@ -243,7 +222,7 @@
             cuiButton2.PressedImageTint = Color.White;
             cuiButton2.PressedOutline = Color.FromArgb(64, 128, 128, 128);
             cuiButton2.Rounding = new Padding(20);
-            cuiButton2.Size = new Size(624, 48);
+            cuiButton2.Size = new Size(811, 48);
             cuiButton2.TabIndex = 19;
             cuiButton2.TextAlignment = StringAlignment.Center;
             cuiButton2.TextOffset = new Point(0, 0);
@@ -256,23 +235,95 @@
             flowLayoutPanelKaryawan.Size = new Size(824, 490);
             flowLayoutPanelKaryawan.TabIndex = 23;
             // 
+            // cuiLabel5
+            // 
+            cuiLabel5.BackColor = Color.FromArgb(108, 156, 8);
+            cuiLabel5.Content = "Nama";
+            cuiLabel5.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel5.ForeColor = Color.White;
+            cuiLabel5.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel5.Location = new Point(130, 231);
+            cuiLabel5.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel5.Name = "cuiLabel5";
+            cuiLabel5.Size = new Size(190, 34);
+            cuiLabel5.TabIndex = 42;
+            cuiLabel5.VerticalAlignment = StringAlignment.Center;
+            // 
+            // cuiLabel4
+            // 
+            cuiLabel4.BackColor = Color.FromArgb(108, 156, 8);
+            cuiLabel4.Content = "Role";
+            cuiLabel4.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel4.ForeColor = Color.White;
+            cuiLabel4.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel4.Location = new Point(338, 231);
+            cuiLabel4.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel4.Name = "cuiLabel4";
+            cuiLabel4.Size = new Size(187, 34);
+            cuiLabel4.TabIndex = 41;
+            cuiLabel4.VerticalAlignment = StringAlignment.Center;
+            // 
+            // cuiLabel3
+            // 
+            cuiLabel3.BackColor = Color.FromArgb(108, 156, 8);
+            cuiLabel3.Content = "Edit";
+            cuiLabel3.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel3.ForeColor = Color.White;
+            cuiLabel3.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel3.Location = new Point(553, 231);
+            cuiLabel3.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel3.Name = "cuiLabel3";
+            cuiLabel3.Size = new Size(150, 34);
+            cuiLabel3.TabIndex = 40;
+            cuiLabel3.VerticalAlignment = StringAlignment.Center;
+            // 
+            // cuiLabel6
+            // 
+            cuiLabel6.BackColor = Color.FromArgb(108, 156, 8);
+            cuiLabel6.Content = "Hapus";
+            cuiLabel6.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel6.ForeColor = Color.White;
+            cuiLabel6.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel6.Location = new Point(711, 231);
+            cuiLabel6.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel6.Name = "cuiLabel6";
+            cuiLabel6.Size = new Size(121, 34);
+            cuiLabel6.TabIndex = 39;
+            cuiLabel6.VerticalAlignment = StringAlignment.Center;
+            // 
+            // cuiLabel7
+            // 
+            cuiLabel7.BackColor = Color.FromArgb(108, 156, 8);
+            cuiLabel7.Content = "No";
+            cuiLabel7.Font = new Font("Alike", 10.1999989F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            cuiLabel7.ForeColor = Color.White;
+            cuiLabel7.HorizontalAlignment = StringAlignment.Center;
+            cuiLabel7.Location = new Point(63, 231);
+            cuiLabel7.Margin = new Padding(4, 5, 4, 5);
+            cuiLabel7.Name = "cuiLabel7";
+            cuiLabel7.Size = new Size(61, 34);
+            cuiLabel7.TabIndex = 38;
+            cuiLabel7.VerticalAlignment = StringAlignment.Center;
+            // 
             // UCManajemenKaryawan
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.White;
+            Controls.Add(cuiLabel5);
+            Controls.Add(cuiLabel4);
             Controls.Add(flowLayoutPanelKaryawan);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(cuiButton2);
+            Controls.Add(cuiLabel3);
+            Controls.Add(cuiLabel6);
             Controls.Add(cuiButtonCreate);
+            Controls.Add(cuiLabel7);
             Controls.Add(cuiButtonTambahKaryawan);
             Controls.Add(cuiTextBoxSearch);
             Controls.Add(cuiButton1);
+            Controls.Add(cuiButton2);
             Name = "UCManajemenKaryawan";
             Size = new Size(910, 777);
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
@@ -280,9 +331,12 @@
         private CuoreUI.Controls.cuiTextBox cuiTextBoxSearch;
         private CuoreUI.Controls.cuiButton cuiButtonTambahKaryawan;
         private CuoreUI.Controls.cuiButton cuiButtonCreate;
-        private Label label2;
-        private Label label1;
         private CuoreUI.Controls.cuiButton cuiButton2;
         private FlowLayoutPanel flowLayoutPanelKaryawan;
+        private CuoreUI.Controls.cuiLabel cuiLabel5;
+        private CuoreUI.Controls.cuiLabel cuiLabel4;
+        private CuoreUI.Controls.cuiLabel cuiLabel3;
+        private CuoreUI.Controls.cuiLabel cuiLabel6;
+        private CuoreUI.Controls.cuiLabel cuiLabel7;
     }
 }
