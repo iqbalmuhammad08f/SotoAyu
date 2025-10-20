@@ -23,6 +23,7 @@ namespace SotoAyu.view
         private void buttonHidePw_Click(object sender, EventArgs e)
         {
             this.cuiTextBoxPassword.PasswordChar = (cuiTextBoxPassword.PasswordChar) ? false : true;
+            this.buttonHidePw.BackgroundImage = (cuiTextBoxPassword.PasswordChar) ? Properties.Resources.Invisible : Properties.Resources.Eye;
         }
 
         private void cuiButtonLogin_Click(object sender, EventArgs e)
@@ -48,9 +49,5 @@ namespace SotoAyu.view
             }
         }
 
-        private void UCLogin_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

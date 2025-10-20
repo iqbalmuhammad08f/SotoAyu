@@ -3,7 +3,7 @@ using SotoAyu.view;
 
 namespace SotoAyu
 {
-    public partial class MainForm : Form
+    public partial class MainForm : Form, ILoadControl
     {
         public MainForm()
         {

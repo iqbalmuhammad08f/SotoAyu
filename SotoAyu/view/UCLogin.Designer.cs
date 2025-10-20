@@ -162,13 +162,13 @@
             // buttonHidePw
             // 
             buttonHidePw.BackColor = Color.Transparent;
-            buttonHidePw.BackgroundImage = Properties.Resources.Hide;
+            buttonHidePw.BackgroundImage = Properties.Resources.Invisible;
             buttonHidePw.BackgroundImageLayout = ImageLayout.Center;
             buttonHidePw.FlatAppearance.BorderSize = 0;
             buttonHidePw.FlatAppearance.MouseDownBackColor = Color.Transparent;
             buttonHidePw.FlatAppearance.MouseOverBackColor = Color.Transparent;
             buttonHidePw.FlatStyle = FlatStyle.Flat;
-            buttonHidePw.Location = new Point(1004, 448);
+            buttonHidePw.Location = new Point(1004, 443);
             buttonHidePw.Name = "buttonHidePw";
             buttonHidePw.Size = new Size(54, 43);
             buttonHidePw.TabIndex = 7;
@@ -190,7 +190,6 @@
             DoubleBuffered = true;
             Name = "UCLogin";
             Size = new Size(1222, 777);
-            Load += UCLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }

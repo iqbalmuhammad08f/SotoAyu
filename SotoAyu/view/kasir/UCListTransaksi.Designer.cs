@@ -52,7 +52,7 @@
             // cuiLabelTanggal
             // 
             cuiLabelTanggal.BackColor = Color.White;
-            cuiLabelTanggal.Content = "Tanggal";
+            cuiLabelTanggal.Content = "tyy";
             cuiLabelTanggal.Font = new Font("Alike", 9F, FontStyle.Regular, GraphicsUnit.Point, 0);
             cuiLabelTanggal.ForeColor = Color.FromArgb(75, 110, 2);
             cuiLabelTanggal.HorizontalAlignment = StringAlignment.Center;
